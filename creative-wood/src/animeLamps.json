@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Rock Lee",
+    "price": 3199.99,
+    "image": "/src/assets/RockLeePlain.png",
+    "imageHover": "/src/assets/RockLee.png"
+  },
+  {
+    "id": 2,
+    "title": "Kakashi Obito",
+    "price": 3199.99,
+    "image": "/src/assets/KakashiObitoPlain.png",
+    "imageHover": "/src/assets/KakashiObito.png"
+  },
+  {
+    "id": 3,
+    "title": "Itachi",
+    "price": 3199.99,
+    "image": "/src/assets/ItachiPlain.png",
+    "imageHover": "/src/assets/Itachi.png"
+  },
+    {
+      "id": 4,
+      "title": "Sasuke Itachi",
+      "price": 3199.99,
+      "image": "/src/assets/SasukeItachiPlain.png",
+      "imageHover": "/src/assets/SasukeItachi.png"
+    },
+    {
+      "id": 5,
+      "title": "Shisui",
+      "price": 3499.99,
+      "image": "/src/assets/ShisuiPlain.png",
+      "imageHover": "/src/assets/Shisui.png"
+    }
+  ]
+  
