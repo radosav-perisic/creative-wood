@@ -8,26 +8,26 @@ const Navbar = () => {
       <div className="fixed place-items-center z-10">
         <section className="relative mx-auto">
           {/* <? navbar  */}
-          <nav className="flex justify-between bg-transparent text-white w-screen">
-            <div className="px-5 xl:px-12 py-6 flex w-full items-center">
+          <nav className="flex justify-between bg-transparent backdrop-blur-[5px] shadow-md shadow-black/20 text-white w-screen">
+            <div className="px-5 xl:px-12 lg:py-5 py-7 flex w-full items-center">
               <a className="text-3xl font-bold font-heading" href="#"></a>
               {/*  Nav Links  */}
               <ul className="hidden md:flex px-4 mx-auto gap-14 font-semibold font-heading space-x-12">
                 <li>
-                  <NavLink className="text-lg text-[#ffffff]  font-bold" as={NavLink} to="/">
+                  <NavLink className="text-base text-[#ffffff]  font-bold" as={NavLink} to="/">
                     Home
                   </NavLink>
                 </li>
                 <li>
                 <Example />
                 </li>
-                <li className="text-lg text-[#ffffff]  font-bold" as={NavLink} to="/collections">
+                <li className="text-base text-[#ffffff]  font-bold" as={NavLink} to="/collections">
                  
                     Kolekcije
                   
                 </li>
                 <li>
-                <NavLink className="text-lg text-[#ffffff]  font-bold" as={NavLink} to="/about">
+                <NavLink className="text-base text-[#ffffff]  font-bold" as={NavLink} to="/about">
                     O Nama
                   </NavLink>
                 </li>
