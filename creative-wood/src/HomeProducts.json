@@ -1,0 +1,22 @@
+[  {
+  "id": 1,
+  "title": "Kakashi Obito",
+  "price": 3199,
+  "image": "/src/assets/KakashiObitoPlain.png",
+  "imageHover": "/src/assets/KakashiObito.png"
+},
+  {
+    "id": 2,
+    "title": "Sterling",
+    "price": 3199,
+    "image": "/src/assets/NobleClosed.png",
+    "imageHover": "/src/assets/NobleOpen.png"
+  },
+  {
+    "id": 3,
+    "title": "Jack Daniels",
+    "price": 3199,
+    "image": "/src/assets/JackDanielsClosed.png",
+    "imageHover": "/src/assets/JackDanielsOpen.png"
+  }
+]
