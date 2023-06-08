@@ -1,11 +1,18 @@
 import React from "react";
 import about from "../assets/aboutus.png";
+import aboutMob from "../assets/onamamob.png";
+import { useMediaQuery } from "@react-hook/media-query";
 
 const About = () => {
+
+    const backgrounds = useMediaQuery("(min-width: 768px)")
+      ? about
+      : aboutMob;
+
   return (
     <div name="about" className="bg-gray-600 text-transparent border-0">
-      <img src={about} className="flex w-full h-full" />
-      <div className="absolute top-[253%] text-lg text-white/70 w-[800px] text-left left-[50.5%]">
+      <img src={backgrounds} className="flex w-screen h-screen md:w-full md:h-full" />
+      <div className="absolute text-[13px] leading-tight lg:leading-normal  lg:text-[19px] text-white/70 top-[20%] lg:top-[50%] w-[210px] lg:w-[800px] text-left left-[39.5%] lg:left-[50.5%]">
         <p className="">
           Iskusite čaroliju Creative Wood-ovih laserski izrezanih drvenih
           proizvoda. Od pažljivo izrađenih zidnih satova do zapanjujućih
