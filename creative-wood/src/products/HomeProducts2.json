@@ -1,0 +1,9 @@
+[  
+{
+  "id": 222,
+  "title": "Star Wars",
+  "price": 2499.99,
+  "image": "/src/assets/starwars.png",
+  "imageHover": "/src/assets/starwars.png"
+}
+]
