@@ -1,6 +1,6 @@
 import React from 'react'
 import services from "../assets/services.png";
-import servicesMobile from "../assets/uslugePozadina.png";
+import servicesMobile from "../assets/ServicesBg.png";
 import Products from "../components/Products";
 import Products2 from "../components/Products2";
 import {MobileBrowser, BrowserView} from 'react-device-detect'
