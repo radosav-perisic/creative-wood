@@ -1,39 +1,56 @@
-import React, { useEffect, useState } from 'react'
+import React from "react";
+import products from '../products/HomeProducts.json'
 
 const Products = () => {
-    const [data, setData] = useState([])
-    const [filter, setFilter] = useState(data)
-    const [loading, setLoading] = useState(false)
-    let componentMounted = true     
 
-    useEffect(()=>{
-const getProducts = async () => {
-setLoading(true);
-const response= await fetch('https://fakestoreapi.com/products');
-if(componentMounted) {
-    setData(await response.clone().json());
-    setFilter(await response.json());
-    setLoading(false);
-    console.log(filter);
-}
-return () => {
-    componentMounted = false;
-}
-}
-getProducts();
-    },[])
-  return (
-    <div>
-     <div className='container'>
-        <div className='flex flex-row'>
-            <div className='grid-cols-12 grid'>
-          <h1>Latest Products!</h1>
+
+
+  const ShowProducts = () => {
+    return (
+      <>
+        
+        {products.map((product) => {
+          return (
+            <div
+              key={product.id}
+              className="mx-auto justify-center group items-center container shadow-2xl lg:pb-6 p-1 shadow-black bg-white/5 backdrop-blur-[3px] rounded-2xl lg:my-3 h-[188px] lg:h-full lg:w-[270px] w-[110px] text-center"
+            >
+              <div
+                style={{
+                  "--image-url": `url(${product.image})`,
+                  "--image-hover-url": `url(${product.imageHover})`,
+                                 
+                }}
+                className="lg:h-[200px] h-[80px] bg-contain bg-center bg-no-repeat hover:scale-[1.2] bg-[image:var(--image-hover-url)] lg:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
+                alt={product.title}
+              ></div>
+
+              <h5 className="lg:text-[1.6rem] text-md lg:text-lg text-gray-100 font-medium lg:mb-1 ">
+                {product.title}
+              </h5>
+              <p className=" text-[#c53838] lg:text-md mt-1 text-sm font-bold">
+                RSD {product.price}
+              </p>
+              <button
+                href="#"
+                className="flex flex-row lg:mt-5 mt-2 mx-auto  bg-[#261111] px-1 lg:px-3 lg:py-3 py-1 hover:bg-[#600d0d] duration-300 text-sm lg:text-lg text-white rounded-md"
+                onClick={() => addProduct(product)}
+              >
+                Dodaj u korpu
+              </button>
             </div>
+          );
+        })}
+      </>
+    );
+  };
 
-        </div>
-     </div>
-    </div>
-  )
-}
+  return (
 
-export default Products
+      <div className="justify-center flex flex-row gap-[107px] lg:gap-[538px]">
+        <ShowProducts />
+      </div>
+  );
+};
+
+export default Products;
