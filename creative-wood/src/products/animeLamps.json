@@ -1,143 +1,150 @@
 [
   {
-    "id": 1,
+    "id": 771,
     "title": "Rock Lee",
     "price": 3199,
     "image": "/src/assets/RockLeePlain.png",
     "imageHover": "/src/assets/RockLee.png"
   },
   {
-    "id": 2,
+    "id": 772,
     "title": "Kakashi Obito",
     "price": 3199,
     "image": "/src/assets/KakashiObitoPlain.png",
     "imageHover": "/src/assets/KakashiObito.png"
   },
   {
-    "id": 3,
+    "id": 773,
     "title": "Itachi",
     "price": 3199,
     "image": "/src/assets/ItachiPlain.png",
     "imageHover": "/src/assets/Itachi.png"
   },
     {
-      "id": 4,
+      "id": 774,
       "title": "Sasuke Itachi",
       "price": 3199,
       "image": "/src/assets/SasukeItachiPlain.png",
       "imageHover": "/src/assets/SasukeItachi.png"
     },
     {
-      "id": 5,
+      "id": 775,
       "title": "Shisui",
       "price": 3499,
       "image": "/src/assets/ShisuiPlain.png",
       "imageHover": "/src/assets/Shisui.png"
     },
     {
-      "id": 6,
-      "title": "Rock Lee",
+      "id": 776,
+      "title": "Ace",
       "price": 3199,
-      "image": "/src/assets/RockLeePlain.png",
-      "imageHover": "/src/assets/RockLee.png"
+      "image": "/src/assets/AcePlain.png",
+      "imageHover": "/src/assets/Ace.png"
     },
     {
-      "id": 7,
-      "title": "Kakashi Obito",
+      "id": 777,
+      "title": "Attack on Titan",
       "price": 3199,
-      "image": "/src/assets/KakashiObitoPlain.png",
-      "imageHover": "/src/assets/KakashiObito.png"
+      "image": "/src/assets/AotPlain.png",
+      "imageHover": "/src/assets/Aot.png"
     },
     {
-      "id": 8,
-      "title": "Itachi",
+      "id": 778,
+      "title": "Chainsawman",
       "price": 3199,
-      "image": "/src/assets/ItachiPlain.png",
-      "imageHover": "/src/assets/Itachi.png"
+      "image": "/src/assets/ChainsawmanPlain.png",
+      "imageHover": "/src/assets/Chainsawman.png"
     },
       {
-        "id": 9,
-        "title": "Sasuke Itachi",
+        "id": 779,
+        "title": "Tokito/Iguro/Uzui",
         "price": 3199,
-        "image": "/src/assets/SasukeItachiPlain.png",
-        "imageHover": "/src/assets/SasukeItachi.png"
+        "image": "/src/assets/DemonSlayer1Plain.png",
+        "imageHover": "/src/assets/DemonSlayer1.png"
       },
       {
-        "id": 10,
-        "title": "Shisui",
+        "id": 710,
+        "title": "Giyu/Sanemi/Kocho",
         "price": 3499,
-        "image": "/src/assets/ShisuiPlain.png",
-        "imageHover": "/src/assets/Shisui.png"
+        "image": "/src/assets/DemonSlayer2Plain.png",
+        "imageHover": "/src/assets/DemonSlayer2.png"
       },
       {
-        "id": 11,
-        "title": "Rock Lee",
+        "id": 711,
+        "title": "Gyomei/Mitsuri/Rengoku",
         "price": 3199,
-        "image": "/src/assets/RockLeePlain.png",
-        "imageHover": "/src/assets/RockLee.png"
+        "image": "/src/assets/DemonSlayer3Plain.png",
+        "imageHover": "/src/assets/DemonSlayer3.png"
       },
       {
-        "id": 12,
-        "title": "Kakashi Obito",
+        "id": 712,
+        "title": "Gaara",
         "price": 3199,
-        "image": "/src/assets/KakashiObitoPlain.png",
-        "imageHover": "/src/assets/KakashiObito.png"
+        "image": "/src/assets/GaraPlain.png",
+        "imageHover": "/src/assets/Gara.png"
       },
       {
-        "id": 13,
-        "title": "Itachi",
+        "id": 713,
+        "title": "Super Saiyan Goku",
         "price": 3199,
-        "image": "/src/assets/ItachiPlain.png",
-        "imageHover": "/src/assets/Itachi.png"
+        "image": "/src/assets/GokuPlain.png",
+        "imageHover": "/src/assets/Goku.png"
       },
         {
-          "id": 14,
-          "title": "Sasuke Itachi",
+          "id": 714,
+          "title": "Luffy Wanted",
           "price": 3199,
-          "image": "/src/assets/SasukeItachiPlain.png",
-          "imageHover": "/src/assets/SasukeItachi.png"
+          "image": "/src/assets/LuffyPlain.png",
+          "imageHover": "/src/assets/Luffy.png"
         },
         {
-          "id": 15,
-          "title": "Shisui",
+          "id": 715,
+          "title": "Luffy",
           "price": 3499,
-          "image": "/src/assets/ShisuiPlain.png",
-          "imageHover": "/src/assets/Shisui.png"
+          "image": "/src/assets/Luffy2Plain.png",
+          "imageHover": "/src/assets/Luffy2.png"
         },
         {
-          "id": 16,
-          "title": "Rock Lee",
+          "id": 716,
+          "title": "Mikasa",
           "price": 3199,
-          "image": "/src/assets/RockLeePlain.png",
-          "imageHover": "/src/assets/RockLee.png"
+          "image": "/src/assets/MikasaPlain.png",
+          "imageHover": "/src/assets/Mikasa.png"
         },
         {
-          "id": 17,
-          "title": "Kakashi Obito",
+          "id": 717,
+          "title": "Naruto/Kurama",
           "price": 3199,
-          "image": "/src/assets/KakashiObitoPlain.png",
-          "imageHover": "/src/assets/KakashiObito.png"
+          "image": "/src/assets/NarutoPlain.png",
+          "imageHover": "/src/assets/Naruto.png"
         },
         {
-          "id": 18,
-          "title": "Itachi",
+          "id": 718,
+          "title": "Naruto Vs Sasuke",
           "price": 3199,
-          "image": "/src/assets/ItachiPlain.png",
-          "imageHover": "/src/assets/Itachi.png"
+          "image": "/src/assets/NarutoSasukePlain.png",
+          "imageHover": "/src/assets/NarutoSasuke.png"
         },
           {
-            "id": 19,
-            "title": "Sasuke Itachi",
+            "id": 719,
+            "title": "Zoro",
             "price": 3199,
-            "image": "/src/assets/SasukeItachiPlain.png",
-            "imageHover": "/src/assets/SasukeItachi.png"
+            "image": "/src/assets/ZoroPlain.png",
+            "imageHover": "/src/assets/Zoro.png"
           },
           {
-            "id": 20,
-            "title": "Shisui",
+            "id": 720,
+            "title": "Zoro 2",
             "price": 3499,
-            "image": "/src/assets/ShisuiPlain.png",
-            "imageHover": "/src/assets/Shisui.png"
+            "image": "/src/assets/Zoro2Plain.png",
+            "imageHover": "/src/assets/Zoro2.png"
+          },
+          {
+            "id": 721,
+            "title": "Zoro 3",
+            "price": 3499,
+            "image": "/src/assets/Zoro3Plain.png",
+            "imageHover": "/src/assets/Zoro3.png"
           }
   ]
   
