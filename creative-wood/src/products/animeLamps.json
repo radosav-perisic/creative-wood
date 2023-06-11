@@ -3,148 +3,148 @@
     "id": 771,
     "title": "Rock Lee",
     "price": 3199,
-    "image": "/src/assets/RockLeePlain.png",
-    "imageHover": "/src/assets/RockLee.png"
+    "image": "src/assets/RockLeePlain.png",
+    "imageHover": "src/assets/RockLee.png"
   },
   {
     "id": 772,
     "title": "Kakashi Obito",
     "price": 3199,
-    "image": "/src/assets/KakashiObitoPlain.png",
-    "imageHover": "/src/assets/KakashiObito.png"
+    "image": "src/assets/KakashiObitoPlain.png",
+    "imageHover": "src/assets/KakashiObito.png"
   },
   {
     "id": 773,
     "title": "Itachi",
     "price": 3199,
-    "image": "/src/assets/ItachiPlain.png",
-    "imageHover": "/src/assets/Itachi.png"
+    "image": "src/assets/ItachiPlain.png",
+    "imageHover": "src/assets/Itachi.png"
   },
     {
       "id": 774,
       "title": "Sasuke Itachi",
       "price": 3199,
-      "image": "/src/assets/SasukeItachiPlain.png",
-      "imageHover": "/src/assets/SasukeItachi.png"
+      "image": "src/assets/SasukeItachiPlain.png",
+      "imageHover": "src/assets/SasukeItachi.png"
     },
     {
       "id": 775,
       "title": "Shisui",
       "price": 3499,
-      "image": "/src/assets/ShisuiPlain.png",
-      "imageHover": "/src/assets/Shisui.png"
+      "image": "src/assets/ShisuiPlain.png",
+      "imageHover": "src/assets/Shisui.png"
     },
     {
       "id": 776,
       "title": "Ace",
       "price": 3199,
-      "image": "/src/assets/AcePlain.png",
-      "imageHover": "/src/assets/Ace.png"
+      "image": "src/assets/AcePlain.png",
+      "imageHover": "src/assets/Ace.png"
     },
     {
       "id": 777,
       "title": "Attack on Titan",
       "price": 3199,
-      "image": "/src/assets/AotPlain.png",
-      "imageHover": "/src/assets/Aot.png"
+      "image": "src/assets/AotPlain.png",
+      "imageHover": "src/assets/Aot.png"
     },
     {
       "id": 778,
       "title": "Chainsawman",
       "price": 3199,
-      "image": "/src/assets/ChainsawmanPlain.png",
-      "imageHover": "/src/assets/Chainsawman.png"
+      "image": "src/assets/ChainsawmanPlain.png",
+      "imageHover": "src/assets/Chainsawman.png"
     },
       {
         "id": 779,
         "title": "Tokito/Iguro/Uzui",
         "price": 3199,
-        "image": "/src/assets/DemonSlayer1Plain.png",
-        "imageHover": "/src/assets/DemonSlayer1.png"
+        "image": "src/assets/DemonSlayer1Plain.png",
+        "imageHover": "src/assets/DemonSlayer1.png"
       },
       {
         "id": 710,
         "title": "Giyu/Sanemi/Kocho",
         "price": 3499,
-        "image": "/src/assets/DemonSlayer2Plain.png",
-        "imageHover": "/src/assets/DemonSlayer2.png"
+        "image": "src/assets/DemonSlayer2Plain.png",
+        "imageHover": "src/assets/DemonSlayer2.png"
       },
       {
         "id": 711,
         "title": "Gyomei/Mitsuri/Rengoku",
         "price": 3199,
-        "image": "/src/assets/DemonSlayer3Plain.png",
-        "imageHover": "/src/assets/DemonSlayer3.png"
+        "image": "src/assets/DemonSlayer3Plain.png",
+        "imageHover": "src/assets/DemonSlayer3.png"
       },
       {
         "id": 712,
         "title": "Gaara",
         "price": 3199,
-        "image": "/src/assets/GaraPlain.png",
-        "imageHover": "/src/assets/Gara.png"
+        "image": "src/assets/GaraPlain.png",
+        "imageHover": "src/assets/Gara.png"
       },
       {
         "id": 713,
         "title": "Super Saiyan Goku",
         "price": 3199,
-        "image": "/src/assets/GokuPlain.png",
-        "imageHover": "/src/assets/Goku.png"
+        "image": "src/assets/GokuPlain.png",
+        "imageHover": "src/assets/Goku.png"
       },
         {
           "id": 714,
           "title": "Luffy Wanted",
           "price": 3199,
-          "image": "/src/assets/LuffyPlain.png",
-          "imageHover": "/src/assets/Luffy.png"
+          "image": "src/assets/LuffyPlain.png",
+          "imageHover": "src/assets/Luffy.png"
         },
         {
           "id": 715,
           "title": "Luffy",
           "price": 3499,
-          "image": "/src/assets/Luffy2Plain.png",
-          "imageHover": "/src/assets/Luffy2.png"
+          "image": "src/assets/Luffy2Plain.png",
+          "imageHover": "src/assets/Luffy2.png"
         },
         {
           "id": 716,
           "title": "Mikasa",
           "price": 3199,
-          "image": "/src/assets/MikasaPlain.png",
-          "imageHover": "/src/assets/Mikasa.png"
+          "image": "src/assets/MikasaPlain.png",
+          "imageHover": "src/assets/Mikasa.png"
         },
         {
           "id": 717,
           "title": "Naruto/Kurama",
           "price": 3199,
-          "image": "/src/assets/NarutoPlain.png",
-          "imageHover": "/src/assets/Naruto.png"
+          "image": "src/assets/NarutoPlain.png",
+          "imageHover": "src/assets/Naruto.png"
         },
         {
           "id": 718,
           "title": "Naruto Vs Sasuke",
           "price": 3199,
-          "image": "/src/assets/NarutoSasukePlain.png",
-          "imageHover": "/src/assets/NarutoSasuke.png"
+          "image": "src/assets/NarutoSasukePlain.png",
+          "imageHover": "src/assets/NarutoSasuke.png"
         },
           {
             "id": 719,
             "title": "Zoro",
             "price": 3199,
-            "image": "/src/assets/ZoroPlain.png",
-            "imageHover": "/src/assets/Zoro.png"
+            "image": "src/assets/ZoroPlain.png",
+            "imageHover": "src/assets/Zoro.png"
           },
           {
             "id": 720,
             "title": "Zoro 2",
             "price": 3499,
-            "image": "/src/assets/Zoro2Plain.png",
-            "imageHover": "/src/assets/Zoro2.png"
+            "image": "src/assets/Zoro2Plain.png",
+            "imageHover": "src/assets/Zoro2.png"
           },
           {
             "id": 721,
             "title": "Zoro 3",
             "price": 3499,
-            "image": "/src/assets/Zoro3Plain.png",
-            "imageHover": "/src/assets/Zoro3.png"
+            "image": "src/assets/Zoro3Plain.png",
+            "imageHover": "src/assets/Zoro3.png"
           }
   ]
   
