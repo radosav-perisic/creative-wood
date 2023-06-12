@@ -3,148 +3,148 @@
     "id": 21,
     "title": "Batman",
     "price": 1999,
-    "image": "/src/assets/BatmanClock.png",
-    "imageHover": "/src/assets/BatmanClock.png"
+    "image": "/BatmanClock.png",
+    "imageHover": "/BatmanClock.png"
   },
   {
     "id": 22,
     "title": "Batman 2",
     "price": 1999,
-    "image": "/src/assets/BatmanClock2.png",
-    "imageHover": "/src/assets/BatmanClock2.png"
+    "image": "/BatmanClock2.png",
+    "imageHover": "/BatmanClock2.png"
   },
   {
     "id": 23,
     "title": "Batman 3",
     "price": 1999,
-    "image": "/src/assets/batman3.png",
-    "imageHover": "/src/assets/batman3.png"
+    "image": "/batman3.png",
+    "imageHover": "/batman3.png"
   },
   {
     "id": 24,
     "title": "Elvis Presley",
     "price": 1999,
-    "image": "/src/assets/ElvisPresleyClock.png",
-    "imageHover": "/src/assets/ElvisPresleyClock.png"
+    "image": "/ElvisPresleyClock.png",
+    "imageHover": "/ElvisPresleyClock.png"
   },
 
   {
     "id": 25,
     "title": "Mustang",
     "price": 1999,
-    "image": "/src/assets/MustangClock.png",
-    "imageHover": "/src/assets/MustangClock.png"
+    "image": "/MustangClock.png",
+    "imageHover": "/MustangClock.png"
   },
   {
     "id": 26,
     "title": "Pikado",
     "price": 1999,
-    "image": "/src/assets/DartsClock.png",
-    "imageHover": "/src/assets/DartsClock.png"
+    "image": "/DartsClock.png",
+    "imageHover": "/DartsClock.png"
   },
   {
     "id": 27,
     "title": "Pas",
     "price": 1999,
-    "image": "/src/assets/DogClock.png",
-    "imageHover": "/src/assets/DogClock.png"
+    "image": "/DogClock.png",
+    "imageHover": "/DogClock.png"
   },
   {
     "id": 28,
     "title": "Land Rover",
     "price": 1999,
-    "image": "/src/assets/LandRoverClock.png",
-    "imageHover": "/src/assets/LandRoverClock.png"
+    "image": "/LandRoverClock.png",
+    "imageHover": "/LandRoverClock.png"
   },
   {
     "id": 29,
     "title": "Barber Shop",
     "price": 1999,
-    "image": "/src/assets/BarberClock.png",
-    "imageHover": "/src/assets/BarberClock.png"
+    "image": "/BarberClock.png",
+    "imageHover": "/BarberClock.png"
   },
   {
     "id": 30,
     "title": "Barber Shop 2",
     "price": 1999,
-    "image": "/src/assets/BarberClock2.png",
-    "imageHover": "/src/assets/BarberClock2.png"
+    "image": "/BarberClock2.png",
+    "imageHover": "/BarberClock2.png"
   },
   {
     "id": 31,
     "title": "Beer",
     "price": 1999,
-    "image": "/src/assets/Beer.png",
-    "imageHover": "/src/assets/Beer.png"
+    "image": "/Beer.png",
+    "imageHover": "/Beer.png"
   },
   {
     "id": 32,
     "title": "Bob Marley",
     "price": 1999,
-    "image": "/src/assets/bobmarli.png",
-    "imageHover": "/src/assets/bobmarli.png"
+    "image": "/bobmarli.png",
+    "imageHover": "/bobmarli.png"
   },
   {
     "id": 33,
     "title": "Dead Pool",
     "price": 1999,
-    "image": "/src/assets/DeadPool.png",
-    "imageHover": "/src/assets/DeadPool.png"
+    "image": "/DeadPool.png",
+    "imageHover": "/DeadPool.png"
   },
   {
     "id": 34,
     "title": "Fishing",
     "price": 1999,
-    "image": "/src/assets/Fishing.png",
-    "imageHover": "/src/assets/Fishing.png"
+    "image": "/Fishing.png",
+    "imageHover": "/Fishing.png"
   },
   {
     "id": 35,
     "title": "Playstation",
     "price": 1999,
-    "image": "/src/assets/Gaming.png",
-    "imageHover": "/src/assets/Gaming.png"
+    "image": "/Gaming.png",
+    "imageHover": "/Gaming.png"
   },
   {
     "id": 36,
     "title": "Game of Thrones",
     "price": 1999,
-    "image": "/src/assets/GoT.png",
-    "imageHover": "/src/assets/GoT.png"
+    "image": "/GoT.png",
+    "imageHover": "/GoT.png"
   },
   {
     "id": 37,
     "title": "Godfather",
     "price": 1999,
-    "image": "/src/assets/Godfather.png",
-    "imageHover": "/src/assets/Godfather.png"
+    "image": "/Godfather.png",
+    "imageHover": "/Godfather.png"
   },
   {
     "id": 38,
     "title": "Joker",
     "price": 1999,
-    "image": "/src/assets/joker.png",
-    "imageHover": "/src/assets/joker.png"
+    "image": "/joker.png",
+    "imageHover": "/joker.png"
   },
   {
     "id": 39,
     "title": "King Kong",
     "price": 1999,
-    "image": "/src/assets/KingKong.png",
-    "imageHover": "/src/assets/KingKong.png"
+    "image": "/KingKong.png",
+    "imageHover": "/KingKong.png"
   },
   {
     "id": 40,
     "title": "Star Wars",
     "price": 1999,
-    "image": "/src/assets/starwars.png",
-    "imageHover": "/src/assets/starwars.png"
+    "image": "/starwars.png",
+    "imageHover": "/starwars.png"
   },
   {
     "id": 41,
     "title": "Peaky Blinders",
     "price": 1999,
-    "image": "/src/assets/PeakyBlindersClock.png",
-    "imageHover": "/src/assets/PeakyBlindersClock.png"
+    "image": "/PeakyBlindersClock.png",
+    "imageHover": "/PeakyBlindersClock.png"
   }
 ] 
