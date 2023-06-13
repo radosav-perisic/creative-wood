@@ -17,7 +17,7 @@ const AnimeProducts = () => {
           return (
             <div
               key={product.id}
-              className="mx-auto justify-center group outline outline-white/10 items-center container shadow-2xl p-1 shadow-black bg-white/5 backdrop-blur-[3px] rounded-2xl my-3 h-52 lg:h-full lg:w-[270px] w-36 text-center"
+              className="mx-auto justify-center group outline outline-white/10 items-center container shadow-2xl p-1 shadow-black bg-white/5 backdrop-blur-[3px] rounded-2xl my-1 h-52 lg:h-full lg:w-[270px] w-36 text-center"
             >
               <div
                 style={{
@@ -25,9 +25,9 @@ const AnimeProducts = () => {
                   "--image-hover-url": `url(${product.imageHover})`,
                                  
                 }}
-                className="lg:h-[210px] h-[110px] bg-contain bg-center bg-no-repeat hover:scale-[1.2] bg-[image:var(--image-hover-url)] lg:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
+                className="lg:h-[210px] h-[110px] bg-contain bg-center bg-no-repeat hover:scale-[1.15] bg-[image:var(--image-hover-url)] lg:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
                 alt={product.title}
-              ></div>
+              ><link rel="preload" as="image" href={product.imageHover} /></div>
 
               <h5 className="lg:text-[1.32rem] text-md text-gray-100 font-medium mb-1">
                 {product.title}
@@ -50,7 +50,7 @@ const AnimeProducts = () => {
   };
 
   return (
-    <div className="grid md:grid-cols-4 grid-cols-2 gap-8 lg:gap-16 py-8 mx-auto mt-56 lg:mt-96">
+    <div className="grid md:grid-cols-4 grid-cols-2 gap-8 lg:gap-16 py-8 mx-auto mt-56 lg:mt-[500px]">
       <ShowAnimeProducts />
     </div>
   );
