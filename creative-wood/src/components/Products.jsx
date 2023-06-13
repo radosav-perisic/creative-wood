@@ -23,7 +23,7 @@ const Products = () => {
                 }}
                 className="lg:h-[200px] h-[80px] bg-contain bg-center bg-no-repeat hover:scale-[1.2] bg-[image:var(--image-hover-url)] lg:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
                 alt={product.title}
-              ></div>
+              ><link rel="preload" as="image" href={product.imageHover} /></div>
 
               <h5 className="lg:text-[1.6rem] text-md lg:text-lg text-gray-100 font-medium lg:mb-1 ">
                 {product.title}
