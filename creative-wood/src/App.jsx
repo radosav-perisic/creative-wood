@@ -2,7 +2,6 @@ import Home from "./pages/Home"
 import AnimeLamps from "./pages/AnimeLamps"
 import Navbar from "./components/Navbar"
 import { Route, Routes} from 'react-router-dom'
-import Footer from './components/Footer'
 // import Cigar from "./pages/Cigar"
 import Cart from "./components/Cart"
 import Checkout from "./components/Checkout"
@@ -27,7 +26,6 @@ function App() {
       <Route exact path='/alllamps' element={<AllLampsPage />}/>
       {/* <Route exact path='/AllLampsPage' element={<AllLampsPage />}/> */}
       </Routes>
-      <Footer/>
     </>
   )
 }
