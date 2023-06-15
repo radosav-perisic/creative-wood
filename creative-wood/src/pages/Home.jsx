@@ -20,7 +20,7 @@ const Home = () => {
       <div style={bgStyle} className="w-full h-full" />
       <div className="absolute bottom-1/4  left-1/2 transform -translate-x-1/2">
         <Link
-          className="text-white color-changing-link font-semibold cursor-pointer ring-[7px] ring-blue-800  hover:bg-blue-950  tracking-widest rounded-full py-1 px-3 text-center text-[1.2  rem] md:text-[1.9rem] duration-300"
+          className="text-white color-changing-link font-semibold cursor-pointer ring-[5.5px] ring-blue-800  hover:bg-blue-950  tracking-widest rounded-full py-1 px-3 text-center text-[1.2  rem] md:text-[1.9rem] duration-300"
           to="services"
           smooth={true}
           duration={500}
