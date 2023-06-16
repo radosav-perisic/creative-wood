@@ -7,25 +7,33 @@ const AllLamps = () => {
  const addProduct = (product) => {
   dispatch(addToCart(product))
  }
+ const openFullscreen = (id) => {
+  const element = document.getElementById(id);
+  if (element && element.requestFullscreen) {
+    element.requestFullscreen();
+  }
+};
 
- const ShowAllLamps = () => {
-  return (
+  const ShowAllLamps = () => {
+    return (
       <>
         {products.map((product) => {
+          const imageId = `image-${product.id}`; // Generate unique id for each product image
           return (
             <div
-            key={product.id}
-            className="mx-auto my-auto justify-center group outline outline-white/10 items-center container shadow-2xl p-1 shadow-black bg-white/5 backdrop-blur-[3px] rounded-2xl h-[260px] lg:h-full lg:w-[270px] w-40 text-center"
-          >
-            <div
-              style={{
-                "--image-url": `url(${product.image})`,
-                "--image-hover-url": `url(${product.imageHover})`,
-                               
-              }}
-              className="lg:h-[190px] h-[160px] bg-contain bg-center bg-no-repeat hover:scale-[1.15] bg-[image:var(--image-hover-url)] lg:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
-              alt={product.title}
-            ><link rel="preload" as="image" href={product.imageHover} /></div>
+              key={product.id}
+              className="mx-auto my-auto justify-center group outline outline-white/10 items-center container shadow-2xl p-1 shadow-black bg-white/5 backdrop-blur-[3px] rounded-2xl h-[260px] lg:h-full lg:w-[270px] w-40 text-center"
+            >
+              <div
+                id={imageId}
+                style={{
+                  "--image-url": `url(${product.image})`,
+                  "--image-hover-url": `url(${product.imageHover})`,
+                }}
+                className="lg:h-[190px] h-[160px] bg-contain bg-center bg-no-repeat hover:scale-[1.15] bg-[image:var(--image-hover-url)] lg:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
+                alt={product.title}
+                onClick={() => openFullscreen(imageId)} // Pass imageId as parameter
+              ><link rel="preload" as="image" href={product.imageHover} /></div>
 
               <h5 className="lg:text-[1.6rem] text-lg text-gray-100 font-medium mb-1">
                 {product.title}
