@@ -4,15 +4,17 @@ import aboutMob from "../assets/onamamob.png";
 import { useMediaQuery } from "@react-hook/media-query";
 
 const About = () => {
-
-    const backgrounds = useMediaQuery("(min-width: 768px)")
-      ? about
-      : aboutMob;
+  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const background = isDesktop ? `url(${about})` : `url(${aboutMob})`;
 
   return (
-    <div name="about" className="bg-gray-600 text-transparent border-0">
-      <img src={backgrounds} className="flex w-screen h-screen md:w-full md:h-full" />
-      <div className="absolute text-[13px] leading-tight lg:leading-normal  lg:text-[19px] text-white/70 top-[20%] lg:top-[50%] w-[210px] lg:w-[800px] text-left left-[39.5%] lg:left-[50.5%]">
+    <div
+    name="about"
+    className="h-screen w-full bg-cover"
+    style={{ backgroundImage: background}}
+  >
+      <div className="flex justify-end items-center h-[850px] lg:h-[1300px] mx-1">
+      <div className="text-[13px] leading-tight lg:leading-normal lg:text-[19px] text-white/70 w-[210px] lg:w-[800px] text-left">
         <p className="">
           Iskusite čaroliju Creative Wood-ovih laserski izrezanih drvenih
           proizvoda. Od pažljivo izrađenih zidnih satova do zapanjujućih
@@ -37,6 +39,7 @@ const About = () => {
           preuzimanja. Na taj način možete direktno doći u naš grad i preuzeti
           komad koji će upotpuniti vaš prostor.
         </p>
+      </div>
       </div>
     </div>
   );
