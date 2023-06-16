@@ -1,0 +1,106 @@
+[
+  {
+    "id": 501,
+    "title": "Polygon Portrait",
+    "price": 3499,
+    "image": "/0lampaglava.png",
+    "imageHover": "/lampaglava.png"
+  },
+  {
+    "id": 502,
+    "title": "Elegant Silhouette",
+    "price": 3499,
+    "image": "/0lampasilhouette.png",
+    "imageHover": "/lampasilhouette.png"
+  },
+  {
+    "id": 503,
+    "title": "Wildscape 1",
+    "price": 3199,
+    "image": "/0lampasuma.png",
+    "imageHover": "/lampasuma.png"
+  },
+  {
+    "id": 504,
+    "title": "Wildscape 2",
+    "price": 3199,
+    "image": "/0lampasuma2.png",
+    "imageHover": "/lampasuma2.png"
+  },
+  {
+    "id": 505,
+    "title": "Wildscape 3",
+    "price": 3199,
+    "image": "/0lampasuma3.png",
+    "imageHover": "/lampasuma3.png"
+  },
+  {
+    "id": 506,
+    "title": "Broken Glass",
+    "price": 3199,
+    "image": "/0lampa2.png",
+    "imageHover": "/lampa2.png"
+  },
+  {
+    "id": 507,
+    "title": "Floral",
+    "price": 3499,
+    "image": "/0lampacvece.png",
+    "imageHover": "/lampacvece.png"
+  },
+  {
+    "id": 508,
+    "title": "Paun",
+    "price": 3199,
+    "image": "/0lampaptica.png",
+    "imageHover": "/lampaptica.png"
+  },
+  {
+    "id": 509,
+    "title": "Woods 1",
+    "price": 3199,
+    "image": "/0lampa1.png",
+    "imageHover": "/lampa1.png"
+  },
+  {
+    "id": 510,
+    "title": "Woods 2",
+    "price": 3199,
+    "image": "/0lampa3.png",
+    "imageHover": "/lampa3.png"
+  },
+  {
+    "id": 511,
+    "title": "Woods 3",
+    "price": 3199,
+    "image": "/0lampa4.png",
+    "imageHover": "/lampa4.png"
+  },
+  {
+    "id": 512,
+    "title": "Zebra",
+    "price": 3499,
+    "image": "/0lampazebra.png",
+    "imageHover": "/lampazebra.png"
+  },
+  {
+    "id": 512,
+    "title": "Circular Harmony",
+    "price": 3499,
+    "image": "/0lampa5.png",
+    "imageHover": "/lampa5.png"
+  },
+  {
+    "id": 512,
+    "title": "Vortex",
+    "price": 3499,
+    "image": "/0lampa6.png",
+    "imageHover": "/lampa6.png"
+  }, {
+    "id": 512,
+    "title": "Piercing Fragments",
+    "price": 3499,
+    "image": "/0lampa7.png",
+    "imageHover": "/lampa7.png"
+  }
+]
