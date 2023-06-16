@@ -3,14 +3,14 @@
     "id": 771,
     "title": "Rock Lee",
     "price": 3199,
-    "image": "/RockLeePlain.png",
+    "image": "/RockLeeplain.png",
     "imageHover": "/RockLee.png"
   },
   {
     "id": 772,
     "title": "Kakashi Obito",
     "price": 3199,
-    "image": "/KakashiObitoPlain.png",
+    "image": "/KakashiObitoplain.png",
     "imageHover": "/KakashiObito.png"
   },
   {
@@ -24,14 +24,14 @@
       "id": 774,
       "title": "Sasuke Itachi",
       "price": 3199,
-      "image": "/SasukeItachiPlain.png",
+      "image": "/SasukeItachiplain.png",
       "imageHover": "/SasukeItachi.png"
     },
     {
       "id": 775,
       "title": "Shisui",
       "price": 3499,
-      "image": "/ShisuiPlain.png",
+      "image": "/Shisuiplain.png",
       "imageHover": "/Shisui.png"
     },
     {
