@@ -1,24 +1,19 @@
-import React from 'react'
+import React from "react";
 import services from "../assets/services.png";
 import servicesMobile from "../assets/ServicesBg.png";
-import Products from "../components/Products";
-import Products2 from "../components/Products2";
-import {MobileBrowser, BrowserView} from 'react-device-detect'
-import clock from '../assets/zidnisaticon.png'
-import alllamps from '../assets/ledlampeicon.png'
-import anime from '../assets/animeledlampeicon.png'
-import { NavLink } from 'react-router-dom';
+import Products from "./Products";
+import { MobileBrowser, BrowserView } from "react-device-detect";
+import clock from "../assets/zidnisaticon.png";
+import alllamps from "../assets/ledlampeicon.png";
+import anime from "../assets/animeledlampeicon.png";
+import { NavLink } from "react-router-dom";
 import { useMediaQuery } from "@react-hook/media-query";
 
-
-
 const Services = () => {
-
   const backgrounds = useMediaQuery("(min-width: 768px)")
     ? services
     : servicesMobile;
 
- 
   const handleClick = () => {
     window.scrollTo({
       top: 0,
@@ -26,33 +21,43 @@ const Services = () => {
     });
   };
 
+  const bgStyle = {
+    backgroundImage: `url(${backgrounds})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  };
+
   return (
-    <div name='services' className="bg-gray-600 text-transparent border-0">
-      <img src={backgrounds} className ="flex w-full h-full"/>
+    <div
+      style={bgStyle}
+      name="services"
+      className="w-full h-screen flex flex-col"
+    >
+      <div className="flex justify-center">
+      <h1 className="text-white font-medium text-7xl text-center justify-center tracking-[0.2em] hidden md:block" style={{ transform: 'translateY(8rem)' }}>USLUGE</h1>
+      </div>
+      <div className="flex items-end justify-center h-screen">
       
-      <img src={clock} className ="md:hidden absolute top-[166%] left-[30%] w-38 h-28"/>
-      <div className='top-[130%] absolute md:hidden grid grid-cols-2 gap-[75px]'>
-      <img src={alllamps} className ="md:hidden w-[160px]"/>
-      <img src={anime} className ="md:hidden w-[160px]"/>
+        <div className="items-center justify-items-center md:grid-cols-3 lg:gap-x-[8rem] md:gap-y-0 gap-y-[2rem] md:grid flex-cols-3 flex flex-col lg:gap-6">
+           <NavLink to='/animelamps' onClick={handleClick} ><img src={anime} alt="Anime" className="color-changing-image h-auto max-w-[120px]" /></NavLink>
+          <h2 className="text-xl font-bold text-white block md:hidden">Izrada Anime LED Lampi</h2>
+          <NavLink to='/clocks' onClick={handleClick}><img src={clock} alt="Clock" className="color-changing-image h-auto max-w-[120px]" /></NavLink>
+          <h2 className="text-xl font-bold text-white block md:hidden">Izrada LED Lampi</h2>
+           <NavLink  to='/alllamps'  onClick={handleClick}><img src={alllamps} alt="All Lamps" className="color-changing-image h-auto max-w-[120px]" /></NavLink>
+          <h2 className="text-xl font-bold text-white block md:hidden md:mb-0 mb-10">Izrada Zidnih Satova</h2>
+          
+        <h2 className="text-xl font-bold text-white hidden md:block">Izrada Anime LED Lampi</h2>
+        <h2 className="text-xl font-bold text-white hidden md:block">Izrada LED Lampi</h2>
+        <h2 className="text-xl font-bold text-white hidden md:block">Izrada Zidnih Satova</h2>
+
+        </div>
       </div>
-      <div className='grid grid-cols-3 absolute top-[134.7%] lg:top-[138%] left-[15.5%] lg:left-[22.7%] gap-[81px] lg:gap-[335px]'>
-      <NavLink onClick={handleClick} to='/animelamps' className='lg:h-[72px] lg:w-[72px] h-7 w-7 rounded-full bg-blue-800/50 animation-ping'></NavLink>
-      <NavLink onClick={handleClick} to='/clocks' className='lg:h-[72px] lg:w-[72px] lg:mt-0 mt-[232px] h-7 w-7 rounded-full bg-blue-800/50 animation-ping'></NavLink>
-      <NavLink onClick={handleClick} to='/alllamps' className='lg:h-[72px] lg:w-[72px] h-7 w-7 rounded-full bg-blue-800/50 animation-ping'></NavLink>
-      </div>
-      <div className='grid grid-cols-3 absolute top-[134.7%] lg:top-[138%] left-[15.5%] lg:left-[22.7%] gap-[81px] lg:gap-[335px]'>
-      <NavLink onClick={handleClick} to='/animelamps' className='lg:h-[72px] lg:w-[72px] h-7 w-7 rounded-full bg-blue-800/50 animation-ping2'></NavLink>
-      <NavLink onClick={handleClick} to='/clocks' className='lg:h-[72px] lg:w-[72px] lg:mt-0 mt-[232px] h-7 w-7 rounded-full bg-blue-800/50 animation-ping2'></NavLink>
-      <NavLink onClick={handleClick} to='/alllamps' className='lg:h-[72px] lg:w-[72px] h-7 w-7 rounded-full bg-blue-800/50 animation-ping2'></NavLink>
-      </div>
-      <div className='absolute top-[145.5%] lg:top-[155%] lg:left-[16.5%] left-[4.1%]'>
-      <Products />
-      </div>
-      <div className='absolute top-[182%] lg:top-[155%] md:left-[41.5%] left-[33.5%]'> 
-      <Products2 />
+      <div className="hidden lg:flex-grow lg:flex h-screen justify-center items-center">
+        <Products />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
