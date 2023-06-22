@@ -2,6 +2,7 @@ import React from "react";
 import about from "../assets/aboutus.png";
 import aboutMob from "../assets/onamamob.png";
 import { useMediaQuery } from "@react-hook/media-query";
+import Footer from "../components/Footer";
 
 const About = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -13,7 +14,7 @@ const About = () => {
     className="h-screen w-full bg-cover"
     style={{ backgroundImage: background}}
   >
-      <div className="flex justify-end items-center h-[850px] lg:h-[1300px] mx-1">
+      <div className="flex justify-end items-center h-full mx-1">
       <div className="text-[13px] leading-tight lg:leading-normal lg:text-[19px] text-white/70 w-[210px] lg:w-[800px] text-left">
         <p className="">
           Iskusite čaroliju Creative Wood-ovih laserski izrezanih drvenih
@@ -41,6 +42,7 @@ const About = () => {
         </p>
       </div>
       </div>
+      <Footer />
     </div>
   );
 };
