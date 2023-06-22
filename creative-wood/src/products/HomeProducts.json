@@ -2,14 +2,21 @@
   "id": 111,
   "title": "Kakashi Obito",
   "price": 3199,
-  "image": "/KakashiObitoPlain.png",
+  "image": "/KakashiObitoplain.png",
   "imageHover": "/KakashiObito.png"
+},
+{
+  "id": 222,
+  "title": "Star Wars",
+  "price": 1999,
+  "image": "/starwars.png",
+  "imageHover": "/starwars.png"
 },
   {
     "id": 333,
-    "title": "Jack Daniels",
+    "title": "Polygon Portrait ",
     "price": 3199,
-    "image": "/JackDanielsClosed.png",
-    "imageHover": "/JackDanielsOpen.png"
+    "image": "/0lampaglava.png",
+    "imageHover": "/lampaglava.png"
   }
 ]
