@@ -48,8 +48,8 @@ const Services = () => {
           <h2 className="text-xl font-bold text-white block md:hidden md:mb-0 mb-10">Izrada Zidnih Satova</h2>
           
         <h2 className="text-xl font-bold text-white hidden md:block">Izrada Anime LED Lampi</h2>
-        <h2 className="text-xl font-bold text-white hidden md:block">Izrada LED Lampi</h2>
         <h2 className="text-xl font-bold text-white hidden md:block">Izrada Zidnih Satova</h2>
+        <h2 className="text-xl font-bold text-white hidden md:block">Izrada LED Lampi</h2>
 
         </div>
       </div>
