@@ -19,7 +19,7 @@ const Products = () => {
           return (
             <div
               key={product.id}
-              className="justify-center group outline outline-white/10 items-center container shadow-2xl p-1 shadow-black bg-white/5 backdrop-blur-[3px] rounded-2xl h-[260px] lg:h-full lg:w-[270px] w-32 text-center"
+              className="justify-center group outline outline-white/10 items-center container shadow-2xl p-1 shadow-black bg-white/5 backdrop-blur-[3px] rounded-2xl h-[260px] md:h-full md:w-[200px] lg:w-[270px] w-32 text-center"
             >
               <div
                 id={imageId}
@@ -27,19 +27,19 @@ const Products = () => {
                   "--image-url": `url(${product.image})`,
                   "--image-hover-url": `url(${product.imageHover})`,
                 }}
-                className="lg:h-[190px] h-[160px] bg-contain bg-center bg-no-repeat hover:scale-[1.15] bg-[image:var(--image-hover-url)] lg:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
+                className="md:h-[190px] h-[160px] bg-contain bg-center bg-no-repeat hover:scale-[1.15] bg-[image:var(--image-hover-url)] md:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
                 alt={product.title}
                 onClick={() => openFullscreen(imageId)}
               ><link rel="preload" as="image" href={product.imageHover} /></div>
-              <h5 className="lg:text-[1.6rem] text-md lg:text-lg text-gray-100 font-medium lg:mb-1 ">
+              <h5 className="md:text-[1.6rem] text-md md:text-md text-gray-100 font-medium md:mb-1 ">
                 {product.title}
               </h5>
-              <p className=" text-[#c53838] lg:text-md mt-1 text-sm font-bold">
+              <p className=" text-[#c53838] md:text-md mt-1 text-sm font-bold">
                 RSD {product.price}
               </p>
               <button
                 href="#"
-                className="flex flex-row lg:mt-5 mt-2 mx-auto  bg-[#261111] px-1 lg:px-3 lg:py-3 py-1 hover:bg-[#600d0d] duration-300 text-sm lg:text-lg text-white rounded-md"
+                className="flex flex-row md:mt-5 mt-2 mx-auto  bg-[#261111] px-1 md:px-3 md:py-3 py-1 hover:bg-[#600d0d] duration-300 text-sm md:text-md text-white rounded-md"
                 onClick={() => addProduct(product)}
               >
                 Dodaj u korpu
@@ -53,7 +53,7 @@ const Products = () => {
 
   return (
 
-      <div className="flex flex-row gap-[5.5rem]">
+      <div className="flex flex-row mt-10 md:gap-x-[3.75rem] lg:gap-x-[5.5rem]">
   
         <ShowProducts />
       </div>
