@@ -116,8 +116,8 @@
     "id": 37,
     "title": "Godfather",
     "price": 1999,
-    "image": "/Godfather.png",
-    "imageHover": "/Godfather.png"
+    "image": "/godfather.png",
+    "imageHover": "/godfather.png"
   },
   {
     "id": 38,
@@ -130,8 +130,8 @@
     "id": 39,
     "title": "King Kong",
     "price": 1999,
-    "image": "/KingKong.png",
-    "imageHover": "/KingKong.png"
+    "image": "/kingkong.png",
+    "imageHover": "/kingkong.png"
   },
   {
     "id": 40,
