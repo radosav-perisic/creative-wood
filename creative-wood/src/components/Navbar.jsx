@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import {BsCart3} from 'react-icons/bs'
 import { Link } from "react-scroll";
+import animeLogo from "../assets/CreativeWoodLogo.png";
+
 
 
 
@@ -29,7 +31,7 @@ const handleClick = () => {
               {/*  Nav Links  */}
               <ul className="hidden md:flex px-4 mx-auto gap-14 font-semibold font-heading space-x-12">
                 <li>
-                  <NavLink onClick={handleClick} className="text-base hover:text-blue-500/80 duration-200 text-[#ffffff]/90  font-bold" as={NavLink} to="/">
+                  <NavLink onClick={handleClick} className="text-base  tracking-wide hover:text-blue-500/80 duration-200 text-[#ffffff]/90  font-bold" as={NavLink} to="/">
                     Home
                   </NavLink>
                 </li>
@@ -37,7 +39,7 @@ const handleClick = () => {
                 <Kolekcije />
                 </li>
                 <li>
-                <NavLink className="text-base hover:text-blue-500/80 duration-200 text-[#ffffff]/90 font-bold" to="about">
+                <NavLink className="text-base hover:text-blue-500/80  tracking-wide duration-200 text-[#ffffff]/90 font-bold" to="about">
                     O Nama
                   </NavLink>
                 </li>
@@ -56,7 +58,7 @@ const handleClick = () => {
               </div>
             </div>
             {/*  Responsive navbar  */}
-            <ul className="lg:hidden gap-10 inline-flex mx-auto items-center font-semibold font-heading ">
+            <ul className="md:hidden gap-10 inline-flex mx-auto items-center font-semibold font-heading ">
                 <li>
                   <NavLink onClick={handleClick} className="text-xs text-[#ffffff]/90 font-bold" as={NavLink} to="/">
                     Home
@@ -70,7 +72,7 @@ const handleClick = () => {
                     O Nama
                   </NavLink>
                 </li>
-            <div className="lg:hidden mr-6 items-center" href="#">
+            <div className="lg:hidden flex mr-6 items-center" href="#">
             <NavLink  as={NavLink}
                 to='/cart'><BsCart3 className="lg:h-7 lg:w-7 w-6 h-6"/></NavLink>
               <span className="flex absolute -mt-8 lg:-mt-5 ml-4">
