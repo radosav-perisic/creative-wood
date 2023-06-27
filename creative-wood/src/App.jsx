@@ -8,6 +8,7 @@ import Checkout from "./components/Checkout"
 import About from "./pages/About"
 import Clocks from "./pages/Clocks"
 import AllLampsPage from "./pages/AllLampsPage"
+import Footer from "./components/Footer"
 // import AllLampsPage from "./pages/AllLampsPage"
 
 function App() {
@@ -24,8 +25,8 @@ function App() {
       <Route exact path='/checkout' element={<Checkout />}/>
       <Route exact path='/clocks' element={<Clocks />}/>
       <Route exact path='/alllamps' element={<AllLampsPage />}/>
-      {/* <Route exact path='/AllLampsPage' element={<AllLampsPage />}/> */}
       </Routes>
+      <Footer />
     </>
   )
 }
