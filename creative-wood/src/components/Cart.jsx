@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, deleteFromCart } from "../redux/actions";
 import { NavLink } from "react-router-dom";
-import cartBg from "../assets/plain.png";
 
 function Cart() {
   const state = useSelector((state) => state.addItems);
@@ -30,7 +29,7 @@ function Cart() {
         {state.map((product) => {
           return (
             <div
-              className="flex items-center justify-between border-b-2 border-gray-800"
+              className="flex md:items-center justify-between border-b-2 border-gray-800"
               key={product.id}
             >
               <div className="flex items-center">
@@ -38,18 +37,18 @@ function Cart() {
                   className="w-24 h-16 bg-contain bg-center bg-no-repeat rounded-md"
                   style={{ backgroundImage: `url(${product.imageHover})` }}
                 ></div>
-                <div className="lg:ml-4 ml-1 flex items-center justify-between lg:flex-row flex-col">
-                  <h3 className="lg:text-black text-indigo-100 lg:w-60 text-lg font-bold md:px-10">
+                <div className="lg:ml-4 ml-1 flex items-start md:items-center justify-between lg:flex-row flex-col">
+                  <h3 className="lg:w-60 text-blue-900 text-lg font-bold md:px-10">
                     {product.title}
                   </h3>
                   <p className="text-sm flex text-black md:px-10">
-                    <span className="text-green-500 font-bold">
-                      <span className="text-black">Kom</span> {product.price}
+                    <span className="text-green-600 font-semibold">
+                      <span className="text-black text-[15px]">Kom</span> {product.price}
                     </span>
                     <span>rsd</span>
                   </p>
                   <p className="text-sm text-black font-medium lg:pl-32">
-                    Total <span className="text-black font-bold">{product.qty} </span>= <span className="text-green-500">
+                    Total <span className="text-black font-bold">{product.qty} </span>= <span className="text-green-600 font-semibold">
                       {product.qty * product.price}
                     </span>
                     rsd
@@ -79,12 +78,13 @@ function Cart() {
   
   const emptyCart = () => {
     return (
-      <div className="md:px-4 px-1 my-5 bg-white/60 rounded-lg py-1 md:py-5">
+      <div className="md:px-4 px-1 my-5 bg-white rounded-lg py-1 md:py-5">
         <div className="container py-1 md:py-4">
           <div className="flex flex-row justify-center">
-            <h3 className="text-black text-2xl md:text-5xl">Vasa korpa je prazna.</h3>
+            <h3 className="text-black text-2xl md:text-5xl">Vaša korpa je prazna.</h3>
           </div>
         </div>
+        
       </div>
     );
   };
@@ -92,8 +92,8 @@ function Cart() {
   const button = () => {
     return (
       <div className="flex flex-col items-center mt-10">
-        <p className="font-semibold text-xl rounded-md mb-2">
-          Ukupno : <span className="text-white font-bold italic">
+        <p className="font-semibold text-xl text-white  rounded-md mb-2">
+          Ukupno : <span className="text-green-500 font-bold italic">
             {calculateTotalPrice().toFixed(2)}
           </span> rsd
         </p>
@@ -102,7 +102,7 @@ function Cart() {
             to="/checkout"
             className="px-5 py-2 ring-4 ring-white font-semibold text-lg duration-300 bg-red-600 hover:bg-red-700 text-white mb-5 w-25 mx-auto"
           >
-            Zavrsi Kupovinu
+            Završi Kupovinu
           </NavLink>
         </div>
       </div>
@@ -111,13 +111,11 @@ function Cart() {
   
   return (
     <div
-      style={{
-        backgroundImage: `url(${cartBg})`,
-      }}
-      className="bg-cover bg-no-repeat h-full lg:h-screen w-screen lg:w-full flex flex-col items-center justify-center"
+      
+      className="h-full min-h-screen w-full bg-blue-950 flex flex-col items-center justify-center"
     >
-              <h1 className="text-red-700 text-3xl md:text-7xl mb-6">Vasa Korpa</h1>
-      <div className="lg:w-3/5 w-[95%] bg-white/60  p-5 lg:max-h-[1500px] rounded-lg">
+              <h1 className="text-red-700 text-3xl md:text-7xl mb-6 mt-20">Vaša Korpa</h1>
+      <div className="lg:w-3/5 w-[95%] bg-white p-5 rounded-lg">
 
         <div className="grid grid-cols-1 gap-6 ">
           {state.length === 0 ? emptyCart() : <ShowProducts />}
