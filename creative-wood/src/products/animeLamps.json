@@ -30,7 +30,7 @@
     {
       "id": 775,
       "title": "Shisui",
-      "price": 3499,
+      "price": 3199,
       "image": "/Shisuiplain.png",
       "imageHover": "/Shisui.png"
     },
@@ -65,7 +65,7 @@
       {
         "id": 710,
         "title": "Giyu/Sanemi/Kocho",
-        "price": 3499,
+        "price": 3199,
         "image": "/DemonSlayer2Plain.png",
         "imageHover": "/DemonSlayer2.png"
       },
@@ -100,7 +100,7 @@
         {
           "id": 715,
           "title": "Luffy",
-          "price": 3499,
+          "price": 3199,
           "image": "/Luffy2Plain.png",
           "imageHover": "/Luffy2.png"
         },
@@ -135,14 +135,14 @@
           {
             "id": 720,
             "title": "Zoro 2",
-            "price": 3499,
+            "price": 3199,
             "image": "/Zoro2Plain.png",
             "imageHover": "/Zoro2.png"
           },
           {
             "id": 721,
             "title": "Zoro 3",
-            "price": 3499,
+            "price": 3199,
             "image": "/Zoro3Plain.png",
             "imageHover": "/Zoro3.png"
           }
