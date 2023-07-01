@@ -20,7 +20,7 @@ const AnimeProducts = () => {
     return (
       <>
         {products.map((product) => {
-          const imageId = `image-${product.id}`; // Generate unique id for each product image
+          const imageId = `image-${product.id}`;
           return (
             <div
               key={product.id}
@@ -34,8 +34,9 @@ const AnimeProducts = () => {
                 }}
                 className="lg:h-[190px] h-[160px] bg-contain bg-center bg-no-repeat hover:scale-[1.15] bg-[image:var(--image-hover-url)] lg:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
                 alt={product.title}
-                onClick={() => openFullscreen(imageId)} // Pass imageId as parameter
-              ><link rel="preload" as="image" href={product.imageHover} /></div>
+                onClick={() => openFullscreen(imageId)}
+              >
+                <link rel="prefetch" as="image" href={product.imageHover} /></div>
 
               <h5 className="lg:text-[1.32rem]  text-sm text-gray-100 font-medium mb-1">
                 {product.title}
@@ -45,7 +46,7 @@ const AnimeProducts = () => {
               </p>
               <button
                 href="#"
-                className="flex flex-row lg:mt-5 mt-2 mx-auto mb-6 bg-[#261111] px-2 lg:px-3 lg:py-3 py-2 hover:bg-[#600d0d] duration-300 text-sm lg:text-lg text-white rounded-md"
+                className="flex flex-row lg:mt-5 mt-2 mx-auto mb-6 bg-[#920f0f] px-2 lg:px-3 lg:py-3 py-2 hover:bg-[#600d0d] duration-300 text-sm lg:text-lg text-white rounded-md"
                 onClick={() => addProduct(product)}
               >
                 Dodaj u korpu
@@ -58,7 +59,7 @@ const AnimeProducts = () => {
   };
 
   return (
-    <div className="grid md:grid-cols-5 grid-cols-2 gap-8 lg:gap-16 py-8 mx-auto mt-56 lg:mt-[500px]">
+    <div className="grid md:grid-cols-4 lg:grid-cols-5 grid-cols-2 gap-8 lg:gap-16 mx-auto my-auto">
       <ShowAnimeProducts />
     </div>
   );
