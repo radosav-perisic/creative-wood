@@ -1,7 +1,6 @@
 import React from "react";
 import AllLamps from "../components/AllLamps";
 import blackwall from '../assets/blackwall.png'
-import Logo from '../assets/CreativeWoodLogo.png'
 import alllampslogo from '../assets/alllampslogo.png'
 
 
@@ -16,7 +15,8 @@ const AllLampsPage = () => {
       }}
       className="lg:bg-cover bg-top bg-cover justify-center items-center h-full bg-no-repeat lg:h-full w-full"
     >
-      
+      <link rel="prefetch" as="image" href={blackwall} />
+    <link rel="prefetch" as="image" href={alllampslogo} />
       <div className="w-full h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start">
         <div className="w-[20%] h-full ml-2 hidden lg:flex items-start flex-row">
           <span className="text-[#52d6eb] text-3xl "> * </span>
