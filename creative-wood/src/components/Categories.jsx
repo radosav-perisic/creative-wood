@@ -24,10 +24,10 @@ export default function Kolekcije() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex tracking-wide text-[#ffffff] outline outline-white/80 lg:py-0.3 px-0.5 lg:px-1.5  font-bold w-full justify-center gap-x-1.5 rounded-md bg-transparent text-sm lg:text-base hover:bg-[#1d4ed8] duration-300">
-          Kolekcije
+        <Menu.Button className="inline-flex tracking-widest text-[#ffffff]  lg:py-0.3 px-0.5 lg:px-1.5  w-full justify-center gap-x-1.5 rounded-md bg-transparent text-xl hover:bg-[#1d4ed8] duration-300">
+          KOLEKCIJE
           <ChevronDownIcon
-            className="-mr-1 mt-[0.04rem] lg:h-6 lg:w-6 h-5 w-5 text-white"
+            className="-mr-1 mt-[0.2rem] lg:h-6 lg:w-6 h-5 w-5 text-white"
             aria-hidden="true"
           />
         </Menu.Button>
