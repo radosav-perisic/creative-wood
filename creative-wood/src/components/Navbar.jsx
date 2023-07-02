@@ -4,8 +4,6 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import {BsCart3} from 'react-icons/bs'
 import { Link } from "react-scroll";
-import animeLogo from "../assets/CreativeWoodLogo.png";
-
 
 
 
