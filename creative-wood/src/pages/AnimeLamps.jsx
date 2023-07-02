@@ -1,34 +1,41 @@
 import React from "react";
 import AnimeProducts from "../components/AnimeProducts";
-import AnimeWall from "../assets/animeledlampebackground.png";
-import AnimeWallMobile from "../assets/blackwall.png";
-import { useMediaQuery } from "@react-hook/media-query";
-import animeSection from "../assets/1.png";
-import Footer from "../components/Footer";
+import blackwall from "../assets/blackwall.png";
+
+import animeSection from "../assets/animelampeslika.png";
 
 const AnimeLamps = () => {
-  const backgrounds = useMediaQuery("(min-width: 768px)")
-    ? AnimeWall
-    : AnimeWallMobile;
+
 
   return (
     <div
       style={{
-        backgroundImage: `url(${backgrounds})`,
+        backgroundImage: `url(${blackwall})`,
       }}
-      className="lg:bg-cover bg-top bg-cover h-full bg-no-repeat lg:h-full w-full"
-    >
-      <div className="w-full h-[280px] absolute mt-16">
-        <img
-          src={animeSection}
-          className="h-[250px] object-cover w-full -mt-10  md:hidden"
-        />
+      className="lg:bg-cover bg-top bg-cover justify-center items-center h-full bg-no-repeat lg:h-full w-full"
+    ><link rel="prefetch" as="image" href={blackwall} />
+    <link rel="prefetch" as="image" href={animeSection} />
+      <div className="w-full h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start">
+        <div className="w-[20%] h-full ml-2 hidden lg:flex items-start flex-row">
+          <span className="text-[#52d6eb] text-3xl "> * </span>
+          <h2 style={{ lineHeight: "1.1" }} className="text-white/90 md:text-lg text-sm justify-end tracking-tight font-bold">
+          Naše lampe dolaze sa ugrađenim RGB-LED svetlima, omogućavajući korisnicima da putem priloženog daljinskog upravljača promene boju svetla po želji.
+          </h2>
+        </div>
+        <div className="md:w-[60%] w-full  mt-10 lg:m-0 flex justify-center">
+          <img src={animeSection} className="md:h-full object-cover w-full" />
+        </div>
+        <div className="md:w-[60%] sm:w-[90%] ml-2 lg:hidden flex place-items-start items-start mb-5 flex-row justify-start">
+          
+          <h2 style={{ lineHeight: "0.9" }} className="text-white/90 text-sm md:text-lg tracking-tight font-bold"><span className="text-[#52d6eb] text-[22px] ">*</span>
+          Naše lampe dolaze sa ugrađenim RGB-LED svetlima, omogućavajući korisnicima da putem priloženog daljinskog upravljača promene boju svetla po želji.
+          </h2>
+        </div>
       </div>
-      <div className="w-full h-full justify-center flex flex-col p-4 mx-auto max-w-[1500px]">
       
+      <div className="w-full h-full pb-10 justify-center flex flex-col mx-auto max-w-[1500px]">
         <AnimeProducts />
       </div>
-      <Footer />
     </div>
   );
 };
