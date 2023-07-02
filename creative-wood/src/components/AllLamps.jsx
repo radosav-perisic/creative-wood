@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import products from "../products/allLedLamps.json";
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { addToCart } from "../redux/actions";
 
 const AllLamps = () => {
@@ -35,7 +34,7 @@ const AllLamps = () => {
                 className="lg:h-[190px] h-[160px] bg-contain bg-center bg-no-repeat hover:scale-[1.15] bg-[image:var(--image-hover-url)] lg:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
                 alt={product.title}
                 onClick={() => openFullscreen(imageId)}
-              ><link rel="preload" as="image" href={product.imageHover} /></div>
+              ><link rel="prefetch" as="image" href={product.imageHover} /></div>
 
               <h5 className="lg:text-[1.32rem]  text-sm text-gray-100 font-medium mb-1">
                 {product.title}
