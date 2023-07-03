@@ -24,10 +24,10 @@ export default function Kolekcije() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex tracking-widest text-[#ffffff]  lg:py-0.3 px-0.5 lg:px-1.5  w-full justify-center gap-x-1.5 rounded-md bg-transparent text-xl hover:bg-[#1d4ed8] duration-300">
+        <Menu.Button className="inline-flex tracking-widest text-[#ffffff]  lg:py-0.3 px-0.5 lg:px-1.5  w-full justify-center md:gap-x-1.5 rounded-md bg-transparent text-sm md:text-xl  font-semibold duration-300">
           KOLEKCIJE
           <ChevronDownIcon
-            className="-mr-1 mt-[0.2rem] lg:h-6 lg:w-6 h-5 w-5 text-white"
+            className="-mr-1 md:mt-[0.2rem] h-6 w-6 text-white"
             aria-hidden="true"
           />
         </Menu.Button>
@@ -42,7 +42,7 @@ export default function Kolekcije() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-44 origin-top-right bg-[#1d4ed8] shadow-lg">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-44 origin-top-right bg-white shadow-lg">
           <div className="pb-1.5">
             <Menu.Item>
               {({ active }) => (
@@ -50,13 +50,11 @@ export default function Kolekcije() {
                 as={NavLink}
                   to='/animelamps'
                   className={classNames(
-                    active ? "hover:text-white duration-150" : "bg-[#1d4ed8]/80  text-gray-900",
-                    "block pl-3.5 pr-4 pt-2  text-sm"
+                    active ? "duration-150" : "bg-white text-gray-900",
+                    "block pl-3.5 pr-4 py-1.5 pt-2.5  text-base"
                   )}
                 >
-                 <span className="bg-[#fb3b51] text-white rounded-md px-0.5 mr-1 "> Anime </span><span className="text-sky-500">L</span>
-                  <span className="text-red-600">E</span>
-                  <span className="text-green-500">D</span> Lampe
+                 <span className="text-black hover:text-blue-700 duration-200 px-0.5 mr-1  font-bold"> Anime LED Lampe</span>
                 </NavLink>
               )}
             </Menu.Item>
@@ -66,13 +64,10 @@ export default function Kolekcije() {
                 as={NavLink}
                 to='/alllamps'
                   className={classNames(
-                    active ? "hover:text-white bg-[#1d4ed8] duration-150" : "bg-[#1d4ed8]  text-gray-900",
-                    "block px-4 my-2 text-sm ml-0"
+                    active ? "duration-150" : "bg-white  text-gray-900",
+                    "block pl-3.5 pr-4 py-1.5  text-base"
                   )}
-                >
-                  Razne <span className="text-sky-500">L</span>
-                  <span className="text-red-600">E</span>
-                  <span className="text-green-500">D</span> Lampe
+                ><span className="text-black px-0.5 mr-1 hover:text-blue-700 duration-200  font-bold">Razne LED Lampe</span>
                 </NavLink>
               )}
             </Menu.Item>
@@ -82,11 +77,11 @@ export default function Kolekcije() {
                 as={NavLink}
                 to='/clocks'
                   className={classNames(
-                    active ? "hover:text-white duration-150" : "bg-[#1d4ed8]  text-gray-900",
-                    "block px-4 my-2 text-sm ml-0"
+                    active ? "duration-150" : "bg-white  text-gray-900",
+                    "block pl-3.5 pr-4 py-1.5  text-base"
                   )}
                 >
-                  Zidni Satovi
+                 <span className="text-black px-0.5 mr-1 pb-3 hover:text-blue-700 duration-200 font-bold">Zidni Satovi</span>
                 </NavLink>
               )}
             </Menu.Item>
