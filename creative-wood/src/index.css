@@ -1,95 +1,122 @@
-@import url('https://fonts.cdnfonts.com/css/boston');
+@import url("https://fonts.cdnfonts.com/css/boston");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply font-[boston];
-    }
+  body {
+    @apply font-[boston];
+  }
 }
 
-  @keyframes animate-down {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40%{
-      transform: translateY(10px);
-    }
-    60%{
-      transform: translateY(5px);
-    }
+@keyframes animate-down {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
 
-  @keyframes colorChange {
-    0% {
-      color: rgba(255, 255, 255, 0.1);
-    }
-    50% {
-      color: rgba(255, 255, 255, 1);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.1);
-    }
+@keyframes colorChange {
+  0% {
+    color: rgba(255, 255, 255, 0.1);
   }
-  
-  .color-changing-link {
-    animation: colorChange 1.2s infinite;
+  50% {
+    color: rgba(255, 255, 255, 1);
   }
+  100% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
 
-  @keyframes opacityChange {
-    0% {
-      opacity: 0.1;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.1;
-    }
-  }
-  
-  .color-changing-image {
-    animation: opacityChange 1.5s infinite;
-  }
-  
-  .animate-down {
-    animation-name: animate-down;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
+.color-changing-link {
+  animation: colorChange 1.2s infinite;
+}
 
-  .center-images {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 100vh; 
+@keyframes errorMessageColors {
+  0% {
+    color: rgba(251, 4, 4, 0.1);
   }
-
-  
-  .center-images .image-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    justify-items: center;
-    align-items: center; 
-    column-gap: 15rem;
+  50% {
+    color: rgb(254, 1, 1);
   }
-
-  
-  .center-images .image-container img {
-    max-width: 120px;
-    height: auto;
+  100% {
+    color: rgba(253, 4, 4, 0.1);
   }
+}
 
-  @keyframes ping {
-    75%, 100% {
-        transform: scale(2);
-        opacity: 0;
-    }
+.content-div {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 253, 250),
+    rgb(228, 228, 231)
+  ) !important;
+}
+
+.error-message {
+  animation: errorMessageColors 1s infinite;
+}
+
+@keyframes opacityChange {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.color-changing-image {
+  animation: opacityChange 1.5s infinite;
+}
+
+.animate-down {
+  animation-name: animate-down;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.center-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.center-images .image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  column-gap: 15rem;
+}
+
+.center-images .image-container img {
+  max-width: 120px;
+  height: auto;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 .animation-ping {
-    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 .animation-ping2 {
@@ -135,5 +162,3 @@
   height: 100%;
   background: transparent;
 }
-
-  
