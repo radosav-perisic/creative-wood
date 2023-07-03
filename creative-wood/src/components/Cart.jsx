@@ -8,9 +8,9 @@ function Cart() {
   const dispatch = useDispatch();
 
   const addProduct = (product) => {
-    dispatch(addToCart(product));
+    dispatch(addToCart(product, product.selectedColor));
   };
-
+  
   const delProduct = (product) => {
     dispatch(deleteFromCart(product));
   };
@@ -38,17 +38,21 @@ function Cart() {
                   style={{ backgroundImage: `url(${product.imageHover})` }}
                 ></div>
                 <div className="lg:ml-4 ml-1 flex items-start md:items-center justify-between lg:flex-row flex-col">
-                  <h3 className="lg:w-60 text-blue-900 text-lg font-bold md:px-10">
+                  <div className="flex flex-col"><h3 className="lg:w-60  text-lg font-bold md:px-10">
                     {product.title}
                   </h3>
-                  <p className="text-sm flex text-black md:px-10">
+                  <p className="lg:w-20  text-lg md:px-10">
+                    {product.selectedColor}
+                  </p>
+                  </div>
+                  <p className="flex  md:px-10">
                     <span className="text-green-600 font-semibold">
                       <span className="text-black text-[15px]">Kom</span> {product.price}
                     </span>
-                    <span>rsd</span>
+                    <span>rsd </span>
                   </p>
-                  <p className="text-sm text-black font-medium lg:pl-32">
-                    Total <span className="text-black font-bold">{product.qty} </span>= <span className="text-green-600 font-semibold">
+                  <p className="font-medium lg:pl-32">
+                    Total <span className=" font-bold">{product.qty} </span>= <span className="text-green-600 font-semibold">
                       {product.qty * product.price}
                     </span>
                     rsd
@@ -57,16 +61,16 @@ function Cart() {
               </div>
               <div className="flex space-x-2 items-center">
                 <button
-                  className="px-2.5 bg-[#7f4343] rounded-md"
+                  className="px-2.5 rounded-sm"
                   onClick={() => addProduct(product)}
                 >
-                  <i className="text-2xl text-gray-200 font-serif font-black">+</i>
+                  <p className="text-2xl text-black outline-1  hover:bg-black hover:text-white duration-200 outline px-2 rounded-sm font-serif font-black">+</p>
                 </button>
                 <button
-                  className="px-2.5 bg-[#7f4343] rounded-md"
+                  className="px-2.5 rounded-sm"
                   onClick={() => delProduct(product)}
                 >
-                  <i className="text-2xl text-gray-200 lg:font-mono font-sans font-black">-</i>
+                  <p className="text-2xl text-black outline-1 hover:bg-black hover:text-white duration-200 outline px-2 rounded-sm font-serif font-black">-</p>
                 </button>
               </div>
             </div>
@@ -81,7 +85,7 @@ function Cart() {
       <div className="md:px-4 px-1 my-5 bg-white rounded-lg py-1 md:py-5">
         <div className="container py-1 md:py-4">
           <div className="flex flex-row justify-center">
-            <h3 className="text-black text-2xl md:text-5xl">Vaša korpa je prazna.</h3>
+            <h3 className=" text-2xl md:text-5xl">Vaša korpa je prazna.</h3>
           </div>
         </div>
         
