@@ -24,8 +24,8 @@ const handleClick = () => {
       <div className="fixed place-items-center z-10">
         <section className="relative mx-auto">
           {/* Navbar  */}
-          <nav className="flex justify-between bg-transparent backdrop-blur-[15px] shadow-md shadow-black/20 text-white w-screen">
-            <div className="lg:px-5 xl:px-12  py-7 flex w-full items-center">
+          <nav className="flex justify-between bg-black/30 backdrop-blur-[15px] shadow-md shadow-black/20 text-white w-screen">
+            <div className="lg:px-5 xl:px-12 py-8 md:py-7 flex w-full items-center">
               {/*  Nav Links  */}
               <ul className="hidden md:flex px-4 mx-auto gap-14 font-semibold font-heading space-x-12">
                 <li>
@@ -56,9 +56,9 @@ const handleClick = () => {
               </div>
             </div>
             {/*  Responsive navbar  */}
-            <ul className="md:hidden gap-10 inline-flex mx-auto items-center font-semibold font-heading ">
+            <ul className="md:hidden gap-7 inline-flex mx-auto items-center font-semibold font-heading ">
                 <li>
-                  <NavLink onClick={handleClick} className="text-base text-[#ffffff]/90 " as={NavLink} to="/">
+                  <NavLink onClick={handleClick} className="text-sm text-[#ffffff]/90 " as={NavLink} to="/">
                     HOME
                   </NavLink>
                 </li>
@@ -66,7 +66,7 @@ const handleClick = () => {
                 <Kolekcije />
                 </li>
                 <li>
-                <NavLink onClick={handleClick} className="text-base whitespace-nowrap text-[#ffffff]/90 " as={NavLink} to="/about">
+                <NavLink onClick={handleClick} className="text-sm whitespace-nowrap text-[#ffffff]/90 " as={NavLink} to="/about">
                     O NAMA
                   </NavLink>
                 </li>
