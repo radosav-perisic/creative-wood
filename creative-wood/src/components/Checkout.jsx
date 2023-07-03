@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
 const Checkout = () => {
   const state = useSelector((state) => state.addItems);
+  const [formError, setFormError] = useState(false);
+  const [disable, setDisable] = useState(true);
 
   const calculateTotalPrice = () => {
     let total = 0;
@@ -12,9 +14,33 @@ const Checkout = () => {
     return total;
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const inputs = form.querySelectorAll("input");
+
+    let isValid = true;
+
+    inputs.forEach((input) => {
+      if (!input.value) {
+        isValid = false;
+      }
+    });
+
+    if (isValid) {
+      // Submit the form
+      form.submit();
+    } else {
+      // Display error
+      setFormError(true);
+    }
+  };
+
   return (
-    <div className="w-full md:h-screen h-full bg-gray-500 md:p-4 flex justify-center items-top">
+    <div className="w-full h-screen bg-gray-500 md:p-4 flex justify-center items-top">
       <form
+        onSubmit={handleSubmit}
         method="POST"
         action="https://getform.io/f/03a3746f-1821-4ecf-8fd7-1c00d561d7fa"
         className="flex flex-col max-w-[650px] w-full mx-4 mt-16 lg:mt-40"
@@ -33,10 +59,13 @@ const Checkout = () => {
                 className="py-3 px-5 mb[-1px] bg-white flex justify-between leading-5"
               >
                 <div>
-                  <h6 className="my-0">{item.title}</h6>
+                  <h6 className="my-0">
+                    {item.title} {item.selectedColor}
+                  </h6>
                 </div>
                 <span className="text-[#484d51]">
-                  {item.price} <span className="text-black font-semibold">rsd</span>
+                  {item.price}{" "}
+                  <span className="text-black font-semibold">rsd</span>
                 </span>
               </li>
             ))}
@@ -45,37 +74,52 @@ const Checkout = () => {
             <span>Total:</span>
             <span>{calculateTotalPrice()} rsd</span>
           </div>
-                        
+
           <input
-            type="firstname"
+            type="text"
             name="name"
             placeholder="Ime"
             className="my-3 lg:w-[300px] w-[150px] rounded-sm outline-[#838382] outline outline-[0.1px] p-2"
+            required
           />
           <input
-            type="lastname"
-            name="Lastname"
+            type="text"
+            name="lastname"
             placeholder="Prezime"
             className="my-3 lg:ml-[50px] ml-[28px] lg:w-[300px] w-[150px] rounded-sm outline-[#838382] outline outline-[0.1px] p-2"
+            required
           />
         </div>
         <input
-          type="adress"
-          name="Adress"
+          type="text"
+          name="adress"
           placeholder="Adresa"
-          className=" lg:my-3 p-2 rounded-sm outline-[#838382] outline outline-[0.1px]"
+          className="lg:my-3 p-2 rounded-sm outline-[#838382] outline outline-[0.1px]"
+          required
         />
+      <input
+  disabled={disable}
+  type="text"
+  name="apartment number"
+  placeholder="Sprat & Broj Stana"
+  className="my-3 p-2 rounded-sm outline-[#838382] outline outline-[0.1px]"
+/>
+<label htmlFor="include-checkbox">
+Da li imate broj stana?
+  <input
+    onClick={()=>setDisable(!disable)}
+    type="checkbox"
+    id="include-checkbox"
+    name="include-checkbox"
+    className="ml-2"
+  />
+</label>
         <input
-          type="apartment number "
-          name="apartment number"
-          placeholder="Sprat & Broj Stana"
-          className="my-3 p-2 rounded-sm outline-[#838382] outline outline-[0.1px]"
-        />
-        <input
-          type="postal code"
-          name="postal code"
+          type="text"
+          name="postal-code"
           placeholder="Postanski Kod"
           className="outline outline-[0.1px] rounded-sm outline-[#838382]  lg:my-3 p-2"
+          required
         />
         <div className="justify-between inline-table">
           <input
@@ -83,18 +127,28 @@ const Checkout = () => {
             name="email"
             placeholder="Email"
             className="my-3 lg:w-[300px] w-[150px] rounded-sm outline-[#838382] outline outline-[0.1px] p-2"
+            required
           />
+          
           <input
-            type="telephone"
+            type="text"
             name="telephone"
             placeholder="Kontakt Telefon"
             className="my-3 lg:ml-[50px] ml-[28px] lg:w-[300px] w-[150px] rounded-sm outline-[#838382] outline outline-[0.1px] p-2"
+            required
           />
         </div>
-        <button className='text-white z-prop bg-[#cd1b1b] ring-2 ring-gray-600 border-2 hover:bg-[#871212] hover:border-[#fafafa] duration-500 px-10 py-3 my-4 mx-auto flex items-center'>Naruci</button>
+        {formError && (
+          <div className="text-red-600 text-center">
+            Sva polja moraju biti popunjena.
+          </div>
+        )}
+        <button className="text-white z-prop bg-[#cd1b1b] ring-2 ring-gray-600 border-2 hover:bg-[#871212] hover:border-[#fafafa] duration-500 px-10 py-3 my-4 mx-auto flex items-center">
+          Naruci
+        </button>
       </form>
     </div>
-    )
-}
+  );
+};
 
-export default Checkout
+export default Checkout;

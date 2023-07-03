@@ -17,7 +17,7 @@ const Clocks = () => {
         <div className="w-2/4 h-full pr-28 bg-transparent ml-2 hidden mx-auto lg:flex items-end justify-center flex-row">
           
           <h2 style={{ lineHeight: "1.1" }} className="text-black/90 text-[20px] justify-end">
-          <h3 className="text-start text-black uppercase tracking-wide text-[40px] font-semibold">ZIDNI SATOVI</h3>
+          <h3 className="text-start mb-10 text-black uppercase tracking-wide text-[40px] font-semibold">ZIDNI SATOVI</h3>
            <p className="my-4"> Dostupni u elegantnoj <span className=" font-bold ">crnoj, čistoj beloj i prirodnoj braon boji</span>. Ovi satovi će se savršeno uklopiti u bilo koji enterijer i pružiti vam elegantan dodatak za vaš dom.</p>
            <p className="my-4"> Materijal: <span className=" font-bold ">Lesonit</span>. Izrađeni su od visokokvalitetnog materijala - lesonita. Ovaj materijal je izdržljiv i lagan, što ga čini idealnim za satove koji će biti istovremeno funkcionalni i dekorativni.</p>
            <p className="my-4"> Prečnik svih satova:  <span className=" font-bold ">40cm</span>. Svi satovi imaju prečnik od 40cm, što ih čini dovoljno velikim da budu primetni, ali ne previše dominantnim, idealnim za bilo koju prostoriju u kući ili kancelariji.</p>
