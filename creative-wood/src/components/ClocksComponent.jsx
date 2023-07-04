@@ -36,7 +36,7 @@ const ClocksComponent = () => {
           return (
             <div
               key={product.id}
-              className="mx-auto my-auto bg-[#e4e4e7] justify-center group items-center container p-1 shadow-2xl shadow-black/30 h-[260px] lg:h-full lg:w-[270px] w-40 text-center"
+              className="mx-auto my-auto rounded-sm bg-white/20 lg:bg-white/5 outline outline-2 outline-white/50 lg:outline-white/20 justify-center group items-center container p-1 shadow-2xl shadow-black/80 h-[260px] lg:h-full lg:w-[270px] w-40 text-center"
             >
               <div
                 id={imageId}
@@ -50,7 +50,7 @@ const ClocksComponent = () => {
                 <link rel="prefetch" as="image" href={product.imageHover} />
               </div>
 
-              <h5 className="lg:text-[1.5rem] text-sm text-black font-semibold lg:mb-3 mb-1">
+              <h5 className="lg:text-[1.5rem] text-sm text-white/90 font-semibold lg:mb-3 mb-1">
                 {product.title}
               </h5>
              <select
@@ -73,7 +73,7 @@ const ClocksComponent = () => {
                   Braon
                 </option>
               </select>
-              <p className="text-[#100505] lg:text-lg text-sm font-extrabold underline-offset-4 decoration-red-600">
+              <p className="text-[#b03030] lg:text-lg text-sm font-extrabold underline-offset-4 decoration-red-600">
                 RSD {product.price},<span className="text-xs">00</span>
               </p>
               <button
