@@ -24,8 +24,8 @@ const AnimeProducts = () => {
           return (
             <div
               key={product.id}
-              className="mx-auto my-auto justify-center group outline outline-white/10 items-center container shadow-2xl p-1 shadow-black bg-white/5 backdrop-blur-[3px] rounded-2xl h-[260px] lg:h-full lg:w-[270px] w-40 text-center"
-            >
+              className="mx-auto my-auto justify-center group outline outline-2 outline-white/10 items-center container shadow-2xl p-1 shadow-black rounded-sm h-[260px] lg:h-full lg:w-[270px] w-40 text-center"
+            ><link rel="preload" as="image" href={product.imageHover} />
               <div
                 id={imageId}
                 style={{
@@ -36,7 +36,7 @@ const AnimeProducts = () => {
                 alt={product.title}
                 onClick={() => openFullscreen(imageId)}
               >
-                <link rel="prefetch" as="image" href={product.imageHover} /></div>
+                </div>
 
               <h5 className="lg:text-[1.32rem]  text-sm text-gray-100 font-medium mb-1">
                 {product.title}
@@ -59,7 +59,7 @@ const AnimeProducts = () => {
   };
 
   return (
-    <div className="grid md:grid-cols-4 lg:grid-cols-5 grid-cols-2 gap-8 lg:gap-16 mx-auto my-auto">
+    <div className="grid md:grid-cols-4 lg:grid-cols-5 grid-cols-2 gap-8 lg:gap-14 mx-auto my-auto">
       <ShowAnimeProducts />
     </div>
   );
