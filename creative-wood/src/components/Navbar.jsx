@@ -24,7 +24,7 @@ const handleClick = () => {
       <div className="fixed place-items-center z-10">
         <section className="relative mx-auto">
           {/* Navbar  */}
-          <nav className="flex justify-between bg-black/30 backdrop-blur-[15px] shadow-md shadow-black/20 text-white w-screen">
+          <nav className="flex justify-between backdrop-blur-[15px] shadow-md shadow-black/20 text-white w-screen">
             <div className="lg:px-5 xl:px-12 py-8 md:py-7 flex w-full items-center">
               {/*  Nav Links  */}
               <ul className="hidden md:flex px-4 mx-auto gap-14 font-semibold font-heading space-x-12">
