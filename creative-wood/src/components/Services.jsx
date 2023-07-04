@@ -1,8 +1,7 @@
 import React from "react";
-import services from "../assets/services.png";
-import servicesMobile from "../assets/ServicesBg.png";
+import services from "/services.png";
+
 import Products from "./Products";
-import { MobileBrowser, BrowserView } from "react-device-detect";
 import clock from "../assets/zidnisaticon.png";
 import alllamps from "../assets/ledlampeicon.png";
 import anime from "../assets/animeledlampeicon.png";
