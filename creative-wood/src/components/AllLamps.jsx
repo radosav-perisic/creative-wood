@@ -23,8 +23,8 @@ const AllLamps = () => {
           return (
             <div
               key={product.id}
-              className="mx-auto my-auto justify-center group outline outline-white/10 items-center container shadow-2xl p-1 shadow-black bg-white/5 backdrop-blur-[3px] rounded-2xl h-[260px] lg:h-full lg:w-[270px] w-40 text-center"
-            >
+              className="mx-auto my-auto justify-center group outline outline-2 outline-white/10 items-center container shadow-2xl p-1 shadow-black rounded-sm h-[260px] lg:h-full lg:w-[270px] w-40 text-center"
+            ><link rel="preload" as="image" href={product.imageHover} />
               <div
                 id={imageId}
                 style={{
@@ -34,7 +34,7 @@ const AllLamps = () => {
                 className="lg:h-[190px] h-[160px] bg-contain bg-center bg-no-repeat hover:scale-[1.15] bg-[image:var(--image-hover-url)] lg:bg-[image:var(--image-url)] group-hover:bg-[image:var(--image-hover-url)] delay-[30ms] group duration-300 object-contain mx-auto rounded-md"
                 alt={product.title}
                 onClick={() => openFullscreen(imageId)}
-              ><link rel="prefetch" as="image" href={product.imageHover} /></div>
+              ></div>
 
               <h5 className="lg:text-[1.32rem]  text-sm text-gray-100 font-medium mb-1">
                 {product.title}
