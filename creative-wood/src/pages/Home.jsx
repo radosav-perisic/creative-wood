@@ -1,10 +1,10 @@
 import React from "react";
-import home from "../assets/hero.png";
-import homeMobile from "../assets/homemob.png";
+import home from "/hero.png";
+import homeMobile from "/homemob.png";
 import { Link } from "react-scroll";
 import Services from "../components/Services";
-import Footer from "../components/Footer";
 import { useMediaQuery } from "@react-hook/media-query";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const backgrounds = useMediaQuery("(min-width: 768px)") ? home : homeMobile;
@@ -16,7 +16,9 @@ const Home = () => {
   };
 
   return (
+
     <div className="w-full h-screen relative">
+      
       <div style={bgStyle} className="w-full h-full" />
       <div className="absolute bottom-1/4  left-1/2 transform -translate-x-1/2">
         <Link

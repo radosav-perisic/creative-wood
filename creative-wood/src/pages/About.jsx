@@ -1,7 +1,7 @@
 import React from "react";
-import about from "../assets/PCabout.jpg";
-import aboutMob from "../assets/MOBabout.jpg";
-import MDabout from "../assets/MDabout.jpg";
+import about from "/PCabout.jpg";
+import aboutMob from "/MOBabout.jpg";
+import MDabout from "/MDabout.jpg";
 import { useMediaQuery } from "@react-hook/media-query";
 
 const About = () => {
