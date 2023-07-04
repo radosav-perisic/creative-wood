@@ -53,6 +53,20 @@
   }
 }
 
+.neon {
+  color: #05c5f9;
+  text-shadow:
+  0 0 2px #fff,
+  0 0 4px #fff,
+    0 0 5px #00c7ff,
+    0 0 5px #00c7ff,
+    0 0 30px #ffffff98,
+    0 0 40px #00c7ff, 
+    0 0 60px #00c7ff,
+    0 0 80px #00c7ff;  
+}
+
+
 .content-div {
   background-image: linear-gradient(
     to bottom,
