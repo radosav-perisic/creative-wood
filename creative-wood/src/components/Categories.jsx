@@ -12,7 +12,7 @@ function classNames(...classes) {
 }
 
 export default function Kolekcije() {
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleClick = () => {
     window.scrollTo({
       top: 0,
@@ -22,9 +22,10 @@ export default function Kolekcije() {
 
 
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu   onMouseEnter={() => setIsMenuOpen(true)}
+    onMouseLeave={() => setIsMenuOpen(false)} as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex tracking-widest text-[#ffffff]  lg:py-0.3 px-0.5 lg:px-1.5  w-full justify-center md:gap-x-1.5 rounded-md bg-transparent text-sm md:text-xl  font-semibold duration-300">
+        <Menu.Button className="inline-flex tracking-widest text-[#ffffff] hover:text-blue-500/80 lg:py-0.3 px-0.5 lg:px-1.5  w-full justify-center md:gap-x-1.5 rounded-md bg-transparent text-sm md:text-xl  font-semibold duration-300">
           KOLEKCIJE
           <ChevronDownIcon
             className="-mr-1 md:mt-[0.2rem] h-6 w-6 text-white"
@@ -34,6 +35,7 @@ export default function Kolekcije() {
       </div>
 
       <Transition
+      show={isMenuOpen}
         as={Fragment}
         enter="transition ease-out duration-300"
         enterFrom="transform opacity-0 scale-95"
@@ -58,6 +60,7 @@ export default function Kolekcije() {
                 </NavLink>
               )}
             </Menu.Item>
+            <div className="border-b-2 border-[#828080]"/>
             <Menu.Item onClick={handleClick}>
               {({ active }) => (
                 <NavLink 
@@ -71,6 +74,7 @@ export default function Kolekcije() {
                 </NavLink>
               )}
             </Menu.Item>
+            <div className="border-b-2 border-[#828080]"/>
             <Menu.Item>
               {({ active }) => (
                 <NavLink onClick={handleClick}
@@ -81,7 +85,7 @@ export default function Kolekcije() {
                     "block pl-3.5 pr-4 py-1.5  text-base"
                   )}
                 >
-                 <span className="text-black px-0.5 mr-1 pb-3 hover:text-blue-700 duration-200 font-bold">Zidni Satovi</span>
+                 <span className="text-black px-0.5 mr-1 hover:text-blue-700 duration-200 font-bold">Zidni Satovi</span>
                 </NavLink>
               )}
             </Menu.Item>
