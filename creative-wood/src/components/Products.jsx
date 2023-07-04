@@ -1,7 +1,14 @@
 import React from "react";
 import products from '../products/HomeProducts.json'
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/actions";
 
 const Products = () => {
+
+  const dispatch = useDispatch();
+  const addProduct = (product) => {
+   dispatch(addToCart(product))
+  };
 
   const openFullscreen = (id) => {
     const element = document.getElementById(id);
@@ -19,7 +26,7 @@ const Products = () => {
           return (
             <div
               key={product.id}
-              className="mx-auto my-auto justify-center group outline outline-white/20 items-center container p-1  bg-white/10 backdrop-blur-[3px] rounded-2xl h-[260px] lg:h-full lg:w-[270px] w-40 text-center"
+              className="mx-auto my-auto justify-center group outline outline-white/20 items-center container p-1 rounded-sm h-[260px] lg:h-full lg:w-[270px] w-40 text-center"
             >
               <div
                 id={imageId}
