@@ -2,14 +2,14 @@
   {
     "id": 501,
     "title": "Polygon Portrait",
-    "price": 3499,
+    "price": 3199,
     "image": "/0lampaglava.png",
     "imageHover": "/lampaglava.png"
   },
   {
     "id": 502,
     "title": "Elegant Silhouette",
-    "price": 3499,
+    "price": 3199,
     "image": "/0lampasilhouette.png",
     "imageHover": "/lampasilhouette.png"
   },
@@ -44,7 +44,7 @@
   {
     "id": 507,
     "title": "Floral",
-    "price": 3499,
+    "price": 3199,
     "image": "/0lampacvece.png",
     "imageHover": "/lampacvece.png"
   },
@@ -79,27 +79,27 @@
   {
     "id": 512,
     "title": "Zebra",
-    "price": 3499,
+    "price": 3199,
     "image": "/0lampazebra.png",
     "imageHover": "/lampazebra.png"
   },
   {
     "id": 512,
     "title": "Circular Harmony",
-    "price": 3499,
+    "price": 3199,
     "image": "/0lampa5.png",
     "imageHover": "/lampa5.png"
   },
   {
     "id": 512,
     "title": "Vortex",
-    "price": 3499,
+    "price": 3199,
     "image": "/0lampa6.png",
     "imageHover": "/lampa6.png"
   }, {
     "id": 512,
     "title": "Piercing Fragments",
-    "price": 3499,
+    "price": 3199,
     "image": "/0lampa7.png",
     "imageHover": "/lampa7.png"
   }
