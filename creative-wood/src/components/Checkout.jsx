@@ -23,16 +23,14 @@ const Checkout = () => {
     let isValid = true;
 
     inputs.forEach((input) => {
-      if (!input.value) {
+      if (!input.disabled && !input.value) {
         isValid = false;
       }
     });
 
     if (isValid) {
-      // Submit the form
       form.submit();
     } else {
-      // Display error
       setFormError(true);
     }
   };
@@ -94,26 +92,29 @@ const Checkout = () => {
           type="text"
           name="adress"
           placeholder="Adresa"
-          className="lg:my-3 p-2 rounded-sm outline-[#838382] outline outline-[0.1px]"
+          className="lg:my-3 p-2 rounded-sm outline-[#Here's the continuation of the modified code:
+
+```jsx
+838382] outline outline-[0.1px]"
           required
         />
-      <input
-  disabled={disable}
-  type="text"
-  name="apartment number"
-  placeholder="Sprat & Broj Stana"
-  className="my-3 p-2 rounded-sm outline-[#838382] outline outline-[0.1px]"
-/>
-<label htmlFor="include-checkbox">
-Da li imate broj stana?
-  <input
-    onClick={()=>setDisable(!disable)}
-    type="checkbox"
-    id="include-checkbox"
-    name="include-checkbox"
-    className="ml-2"
-  />
-</label>
+        <input
+          disabled={disable}
+          type="text"
+          name="apartment number"
+          placeholder="Sprat & Broj Stana"
+          className="my-3 p-2 rounded-sm outline-[#838382] outline outline-[0.1px]"
+        />
+        <label htmlFor="include-checkbox">
+          Da li imate broj stana?
+          <input
+            onClick={() => setDisable(!disable)}
+            type="checkbox"
+            id="include-checkbox"
+            name="include-checkbox"
+            className="ml-2"
+          />
+        </label>
         <input
           type="text"
           name="postal-code"
@@ -129,7 +130,7 @@ Da li imate broj stana?
             className="my-3 lg:w-[300px] w-[150px] rounded-sm outline-[#838382] outline outline-[0.1px] p-2"
             required
           />
-          
+
           <input
             type="text"
             name="telephone"
