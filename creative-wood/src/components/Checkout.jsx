@@ -117,6 +117,13 @@ const Checkout = () => {
         </label>
         <input
           type="text"
+          name="city"
+          placeholder="Grad"
+          className="outline outline-[0.1px] rounded-sm outline-[#838382] lg:my-3 p-2"
+          required
+        />
+        <input
+          type="text"
           name="postal-code"
           placeholder="Postanski Kod"
           className="outline outline-[0.1px] rounded-sm outline-[#838382]  lg:my-3 p-2"
