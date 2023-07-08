@@ -54,31 +54,30 @@ const ClocksComponent = () => {
                 {product.title}
               </h5>
              <select
-  className={`rounded-lg px-3 outline-black outline-1 outline bg-white font-semibold ${
-    showError ? "text-red-600 error-message" : ""
-  }`}
+  className={`rounded-sm px-[3px] text-[0.925rem] font-bold appearance-none outline-black outline-1 outline bg-white${
+    showError ? "text-red-600 error-message" : ""}`}
   value={selectedColors[product.id]}
   onChange={(e) => handleColorChange(product.id, e.target.value)}
 >
   <option value="" disabled selected>
-    {showError ? "Izaberite Boju" : "Izaberite Boju"}
+    {showError ? "Izaberite Boju ☰" : "Izaberite Boju ☰"}
   </option>
-                <option value="Crna" className="text-white bg-black">
-                  Crna
+                <option value="Crna" className="text-black border-b-2 border-[#242323] font-bold text-center ">
+                  Crna ⬛
                 </option>
-                <option value="Bela" className="text-black bg-white">
-                  Bela
+                <option value="Bela" className="text-black border-b-2 border-[#242323] font-bold text-center ">
+                  Bela ⬜
                 </option>
-                <option value="Braon" className="text-black bg-[#78350f]/90">
-                  Braon
+                <option value="Braon" className="text-black border-b-2 border-[#242323] font-bold text-center">
+                  Braon 🟫
                 </option>
               </select>
-              <p className="text-[#b03030] lg:text-lg text-sm font-extrabold underline-offset-4 decoration-red-600">
+              <p className="text-[#b03030] lg:text-lg text-sm md:mt-2 mt-1 font-extrabold underline-offset-4 decoration-red-600">
                 RSD {product.price},<span className="text-xs">00</span>
               </p>
               <button
                 href="#"
-                className="flex flex-row lg:mt-5 mt-2 mx-auto mb-6 bg-[#920f0f] px-2 lg:px-3 lg:py-3 py-2 hover:bg-[#600d0d] duration-300 text-sm lg:text-lg text-white rounded-md"
+                className="flex flex-row mt-2 mx-auto mb-6 bg-[#920f0f] px-2 lg:px-3 lg:py-3 py-2 hover:bg-[#600d0d] duration-300 text-sm lg:text-lg text-white rounded-md"
                 onClick={() => addProduct(product)}
               >
                 Dodaj u korpu
