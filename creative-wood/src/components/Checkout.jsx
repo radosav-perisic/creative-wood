@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
 const Checkout = () => {
-  const state = useSelector((state) => state.addItems);
+  const state = useSelector((state) => state.addItems.map((item) => ({ ...item, qty: item.qty })));
   const [formError, setFormError] = useState(false);
   const [disable, setDisable] = useState(true);
 
   const calculateTotalPrice = () => {
     let total = 0;
     state.forEach((item) => {
-      total += item.price;
+      total += item.price * item.qty;
     });
     return total;
   };
@@ -18,12 +18,17 @@ const Checkout = () => {
     e.preventDefault();
 
     const form = e.target;
-    const inputs = form.querySelectorAll("input");
+    const inputs = Array.from(form.elements).filter(
+      (input) =>
+        !input.disabled &&
+        input.tagName === "INPUT" &&
+        (input.type !== "hidden" || input.value)
+    );
 
     let isValid = true;
 
     inputs.forEach((input) => {
-      if (!input.disabled && !input.value) {
+      if (!input.value) {
         isValid = false;
       }
     });
@@ -36,7 +41,7 @@ const Checkout = () => {
   };
 
   return (
-    <div className="w-full h-screen bg-gray-500 md:p-4 flex justify-center items-top">
+    <div className="w-full h-full bg-gray-500 md:p-4 flex justify-center items-top">
       <form
         onSubmit={handleSubmit}
         method="POST"
@@ -61,10 +66,18 @@ const Checkout = () => {
                     {item.title} {item.selectedColor}
                   </h6>
                 </div>
-                <span className="text-[#484d51]">
-                  {item.price}{" "}
-                  <span className="text-black font-semibold">rsd</span>
-                </span>
+                <div className="flex items-center">
+                  <span className="mr-1">{item.qty}x</span>
+                  <span className="text-[#484d51]">
+                    {item.price}
+                    <span className="text-black font-semibold">rsd</span>
+                  </span>
+                </div>
+                <input
+                  type="hidden"
+                  name={`item-${item.id}`}
+                  value={`${item.title},${item.selectedColor},${item.price},${item.qty}`}
+                />
               </li>
             ))}
           </ul>
@@ -92,16 +105,13 @@ const Checkout = () => {
           type="text"
           name="adress"
           placeholder="Adresa"
-          className="lg:my-3 p-2 rounded-sm outline-[#Here's the continuation of the modified code:
-
-```jsx
-838382] outline outline-[0.1px]"
+          className="lg:my-3 p-2 rounded-sm outline-[#838382] outline outline-[0.1px]"
           required
         />
         <input
           disabled={disable}
           type="text"
-          name="apartment number"
+          name="apartment_number"
           placeholder="Sprat & Broj Stana"
           className="my-3 p-2 rounded-sm outline-[#838382] outline outline-[0.1px]"
         />
