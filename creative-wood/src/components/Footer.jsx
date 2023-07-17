@@ -11,10 +11,10 @@ const Footer = () => {
       </p>
 
       <div className='space-x-3 flex'>
-        <a href="#" className="text-2xl hover:scale-125 duration-300">
+        <a href="https://www.instagram.com/creativewood.store/" className="text-2xl hover:scale-125 duration-300">
           <FaInstagram />
         </a>
-        <a href="#" className="text-2xl hover:scale-125 duration-300">
+        <a href="https://www.facebook.com/creativewoodlaser" className="text-2xl hover:scale-125 duration-300">
           <FaFacebook />
         </a>
         </div>
