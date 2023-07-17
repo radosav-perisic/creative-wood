@@ -1,2 +1,2 @@
 # Creative Wood
-Experience the magic of Creative Wood's laser-cut wooden products. From finely crafted cigar boxes to captivating wall lamps adorned with LED lighting, their collection encompasses a variety of stylish accessories. With a commitment to quality and craftsmanship, they bring personalized touches to every creation.
+Creative Wood is your go-to ecommerce store for laser-cut wooden products. Explore our collection of mesmerizing anime LED lamps, versatile LED lamps, and stylish wall clocks. Discover the perfect combination of craftsmanship and innovation to adorn your space with unique and enchanting wooden creations.
