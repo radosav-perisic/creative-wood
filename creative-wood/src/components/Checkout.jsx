@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
 const Checkout = () => {
-  const state = useSelector((state) => state.addItems.map((item) => ({ ...item, qty: item.qty })));
+  const state = useSelector((state) =>
+    state.addItems.map((item) => ({ ...item, qty: item.qty }))
+  );
   const [formError, setFormError] = useState(false);
   const [disable, setDisable] = useState(true);
 
@@ -16,7 +18,7 @@ const Checkout = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     const form = e.target;
     const inputs = Array.from(form.elements).filter(
       (input) =>
@@ -24,17 +26,32 @@ const Checkout = () => {
         input.tagName === "INPUT" &&
         (input.type !== "hidden" || input.value)
     );
-
+  
     let isValid = true;
-
+  
     inputs.forEach((input) => {
       if (!input.value) {
         isValid = false;
       }
     });
-
+  
     if (isValid) {
-      form.submit();
+      const items = state.map((item) => ({
+        id: item.id,
+        title: item.title,
+        color: item.selectedColor,
+        price: item.price,
+        qty: item.qty,
+      }));
+  
+      const itemsInput = document.querySelector('input[name="items"]');
+  
+      if (itemsInput) {
+        itemsInput.value = JSON.stringify(items);
+        form.submit();
+      } else {
+        console.error("itemsInput is not defined or accessible");
+      }
     } else {
       setFormError(true);
     }
@@ -73,19 +90,16 @@ const Checkout = () => {
                     <span className="text-black font-semibold">rsd</span>
                   </span>
                 </div>
-                <input
-                  type="hidden"
-                  name={`item-${item.id}`}
-                  value={`${item.title},${item.selectedColor},${item.price},${item.qty}`}
-                />
+                
+                <input type="hidden" name="Ukupno" value={calculateTotalPrice()} />
               </li>
             ))}
-          </ul>
+            </ul>
+            <input type="hidden" name="items" value={JSON.stringify(state)} />
           <div className="flex justify-between font-semibold text-lg">
             <span>Total:</span>
             <span>{calculateTotalPrice()} rsd</span>
           </div>
-
           <input
             type="text"
             name="name"
