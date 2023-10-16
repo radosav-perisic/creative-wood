@@ -7,7 +7,6 @@ import { useMediaQuery } from "@react-hook/media-query";
 const About = () => {
   const isDesktop = useMediaQuery("(min-width: 1024px)");
   const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1023px)");
-  const isMobile = useMediaQuery("(max-width: 767px)");
 
   let background;
 
