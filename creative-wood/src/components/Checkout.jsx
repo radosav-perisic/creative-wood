@@ -18,7 +18,7 @@ const Checkout = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     const form = e.target;
     const inputs = Array.from(form.elements).filter(
       (input) =>
@@ -26,28 +26,41 @@ const Checkout = () => {
         input.tagName === "INPUT" &&
         (input.type !== "hidden" || input.value)
     );
-  
+
     let isValid = true;
-  
+
     inputs.forEach((input) => {
       if (!input.value) {
         isValid = false;
       }
     });
-  
+
     if (isValid) {
       const items = state.map((item) => ({
         id: item.id,
         title: item.title,
-        color: item.selectedColor,
+        selectedColor: item.selectedColor,
         price: item.price,
         qty: item.qty,
       }));
+
+      
   
+      const formattedItems = items
+        .map((item) => {
+          const titleWithColor = item.selectedColor
+          console.log(item.selectedColor)
+            ? `${item.title} ${item.selectedColor}`
+            : item.title;
+          return `${titleWithColor} - ${item.qty}x (${item.price} rsd)  `;
+        })
+        .join("\n");
+
+
       const itemsInput = document.querySelector('input[name="items"]');
-  
+
       if (itemsInput) {
-        itemsInput.value = JSON.stringify(items);
+        itemsInput.value = formattedItems;
         form.submit();
       } else {
         console.error("itemsInput is not defined or accessible");
@@ -90,12 +103,16 @@ const Checkout = () => {
                     <span className="text-black font-semibold">rsd</span>
                   </span>
                 </div>
-                
-                <input type="hidden" name="Ukupno" value={calculateTotalPrice()} />
+
+                <input
+                  type="hidden"
+                  name="Ukupno"
+                  value={calculateTotalPrice()}
+                />
               </li>
             ))}
-            </ul>
-            <input type="hidden" name="items" value={JSON.stringify(state)} />
+          </ul>
+          <input type="hidden" name="items" value={JSON.stringify(state)} />
           <div className="flex justify-between font-semibold text-lg">
             <span>Total:</span>
             <span>{calculateTotalPrice()} rsd</span>
