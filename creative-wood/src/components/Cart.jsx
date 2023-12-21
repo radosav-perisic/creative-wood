@@ -1,11 +1,22 @@
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, deleteFromCart } from "../redux/actions";
 import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function Cart() {
   const state = useSelector((state) => state.addItems);
+  const [newState, setNewState] = useState(state || []);
   console.log("state value in cart ", state);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    const data = window.localStorage.getItem("cart");
+    setNewState(JSON.parse(data));
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("cart", JSON.stringify(newState));
+  }, [newState]);
 
   const addProduct = (product) => {
     dispatch(addToCart(product, product.selectedColor));
