@@ -51,7 +51,7 @@ const Products = () => {
                 className="flex flex-row lg:mt-5 mt-2 mx-auto mb-6 bg-[#920f0f] px-2 lg:px-3 lg:py-3 py-2 hover:bg-[#600d0d] duration-300 text-sm lg:text-lg text-white rounded-md"
                 onClick={() => addProduct(product)}
               >
-                Dodaj u korpu
+                Add To Cart
               </button>
             </div>
           );
