@@ -26,7 +26,7 @@ export default function Kolekcije() {
     onMouseLeave={() => setIsMenuOpen(false)} as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className="inline-flex tracking-widest text-[#ffffff] hover:text-blue-500/80 lg:py-0.3 px-0.5 lg:px-1.5  w-full justify-center md:gap-x-1.5 rounded-md bg-transparent text-sm md:text-xl  font-semibold duration-300">
-          KOLEKCIJE
+        CATEGORIES
           <ChevronDownIcon
             className="-mr-1 md:mt-[0.2rem] h-6 w-6 text-white"
             aria-hidden="true"
