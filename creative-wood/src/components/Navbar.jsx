@@ -24,7 +24,7 @@ const handleClick = () => {
       <div className="fixed place-items-center z-10">
         <section className="relative mx-auto">
           {/* Navbar  */}
-          <nav className="flex justify-between backdrop-blur-[15px] shadow-md shadow-black/20 text-white w-screen">
+          <nav className="flex justify-between backdrop-blur-[15px] ml-5 shadow-md shadow-black/20 text-white w-screen">
             <div className="lg:px-5 xl:px-12 py-8 md:py-7 flex w-full items-center">
               {/*  Nav Links  */}
               <ul className="hidden md:flex px-4 mx-auto gap-14 font-semibold font-heading space-x-12">
@@ -38,7 +38,7 @@ const handleClick = () => {
                 </li>
                 <li>
                 <NavLink className="text-xl font hover:text-blue-500/80  tracking-widest duration-200 text-[#ffffff]/90 " to="about">
-                    O NAMA
+                    ABOUT US
                   </NavLink>
                 </li>
               </ul>
@@ -67,7 +67,7 @@ const handleClick = () => {
                 </li>
                 <li>
                 <NavLink onClick={handleClick} className="text-sm whitespace-nowrap text-[#ffffff]/90 " as={NavLink} to="/about">
-                    O NAMA
+                    ABOUT US
                   </NavLink>
                 </li>
             <div className="lg:hidden flex mr-6 items-center" href="#">
