@@ -58,7 +58,7 @@ function Cart() {
                   </div>
                   <p className="flex  md:px-10">
                     <span className="text-green-600 font-semibold">
-                      <span className="text-black text-[15px]">Kom</span> {product.price}
+                      <span className="text-black text-[15px]">Piece</span> {product.price}
                     </span>
                     <span>rsd </span>
                   </p>
@@ -96,7 +96,7 @@ function Cart() {
       <div className="md:px-4 px-1 my-5 bg-white rounded-lg py-1 md:py-5">
         <div className="container py-1 md:py-4">
           <div className="flex flex-row justify-center">
-            <h3 className=" text-2xl md:text-5xl">Vaša korpa je prazna.</h3>
+            <h3 className=" text-2xl md:text-5xl">Your cart is empty.</h3>
           </div>
         </div>
         
@@ -108,7 +108,7 @@ function Cart() {
     return (
       <div className="flex flex-col items-center mt-10">
         <p className="font-semibold text-xl text-white  rounded-md mb-2">
-          Ukupno : <span className="text-green-500 font-bold italic">
+          Total: <span className="text-green-500 font-bold italic">
             {calculateTotalPrice().toFixed(2)}
           </span> rsd
         </p>
@@ -117,7 +117,7 @@ function Cart() {
             to="/checkout"
             className="px-5 py-2 ring-4 ring-white font-semibold text-lg duration-300 bg-red-600 hover:bg-red-700 text-white mb-5 w-25 mx-auto"
           >
-            Završi Kupovinu
+            Go to Checkout
           </NavLink>
         </div>
       </div>
@@ -129,7 +129,7 @@ function Cart() {
       
       className="h-full min-h-screen w-full bg-blue-950 flex flex-col items-center justify-center"
     >
-              <h1 className="text-red-700 text-3xl md:text-7xl mb-6 mt-20">Vaša Korpa</h1>
+              <h1 className="text-red-700 text-3xl md:text-7xl mb-6 mt-20">Your Cart</h1>
       <div className="lg:w-3/5 w-[95%] bg-white p-5 rounded-lg">
 
         <div className="grid grid-cols-1 gap-6 ">
