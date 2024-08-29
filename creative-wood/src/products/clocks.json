@@ -37,14 +37,14 @@
   },
   {
     "id": 26,
-    "title": "Pikado",
+    "title": "Darts",
     "price": 1999,
     "image": "/DartsClock.png",
     "imageHover": "/DartsClock.png"
   },
   {
     "id": 27,
-    "title": "Pas",
+    "title": "Dog",
     "price": 1999,
     "image": "/DogClock.png",
     "imageHover": "/DogClock.png"
