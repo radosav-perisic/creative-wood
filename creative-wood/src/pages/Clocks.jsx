@@ -15,11 +15,11 @@ const Clocks = () => {
         <div className="w-2/4 h-full pr-28 bg-transparent ml-2 hidden mx-auto lg:flex items-end justify-center flex-row">
           
           <h2 style={{ lineHeight: "1.1" }} className="text-white/80 text-[20px] justify-end font-light">
-          <h3 className="text-start mb-10 text-white uppercase tracking-wide text-[45px] font-semibold">ZIDNI SATOVI</h3>
-           <p className="my-4"> Dostupni u elegantnoj <span className=" font-bold text-white">crnoj, čistoj beloj i prirodnoj braon boji</span>. Ovi satovi će se savršeno uklopiti u bilo koji enterijer i pružiti vam elegantan dodatak za vaš dom.</p>
-           <p className="my-4"> Materijal: <span className="font-bold text-white">Lesonit</span>. Izrađeni su od visokokvalitetnog materijala - lesonita. Ovaj materijal je izdržljiv i lagan, što ga čini idealnim za satove koji će biti istovremeno funkcionalni i dekorativni.</p>
-           <p className="my-4"> Prečnik svih satova:  <span className=" font-bold text-white">40cm</span>. Svi satovi imaju prečnik od 40cm, što ih čini dovoljno velikim da budu primetni, ali ne previše dominantnim, idealnim za bilo koju prostoriju u kući ili kancelariji.</p>
-          <p className="my-4"> Za <span className=" font-bold text-white">dodatne boje i personalizaciju</span>, kontaktirajte nas putem e-maila. Naša ekipa će vam pružiti informacije o opcijama i mogućnostima, uz dodatnu nadoknadu za personalizaciju.</p>
+          <h3 className="text-start mb-10 text-white uppercase tracking-wide text-[45px] font-semibold">WALL CLOCKS</h3>
+           <p className="my-4"> Available in elegant <span className=" font-bold text-white">black, pure white, and natural brown colors</span>. These clocks will perfectly fit into any interior and provide you with an elegant addition to your home.</p>
+           <p className="my-4"> Material: <span className="font-bold text-white">Fiberboard</span>. They are made from high-quality material - fiberboard. This material is durable and lightweight, making it ideal for clocks that will be both functional and decorative.</p>
+           <p className="my-4"> Diameter of all clocks:  <span className=" font-bold text-white">40cm</span>. All clocks have a diameter of 40cm, making them large enough to be noticeable but not overly dominant, ideal for any room in the house or office.</p>
+          <p className="my-4"> For <span className=" font-bold text-white">additional colors and personalization</span>, contact us via email. Our team will provide you with information on options and possibilities, with an additional charge for personalization.</p>
           </h2>
          
         </div>
@@ -29,11 +29,11 @@ const Clocks = () => {
         <div className="md:w-[60%] sm:w-[90%] ml-2 lg:hidden flex text-center place-items-center items-center flex-row justify-center">
           
           <div style={{ lineHeight: "1.1" }} className="text-white/80 text-[14px] justify-center font-light">
-          <h3 className="text-center text-white uppercase tracking-wide text-[25px] font-semibold">ZIDNI SATOVI</h3>
-           <p className="my-2"> Dostupni u elegantnoj <span className=" font-bold text-white">crnoj, čistoj beloj i prirodnoj braon boji</span>. Ovi satovi će se savršeno uklopiti u bilo koji enterijer i pružiti vam elegantan dodatak za vaš dom.</p>
-           <p className="my-2"> Materijal: <span className="font-bold text-white">Lesonit</span>. Izrađeni su od visokokvalitetnog materijala - lesonita. Ovaj materijal je izdržljiv i lagan, što ga čini idealnim za satove koji će biti istovremeno funkcionalni i dekorativni.</p>
-           <p className="my-2"> Prečnik svih satova:  <span className=" font-bold text-white">40cm</span>. Svi satovi imaju prečnik od 40cm, što ih čini dovoljno velikim da budu primetni, ali ne previše dominantnim, idealnim za bilo koju prostoriju u kući ili kancelariji.</p>
-          <p className="my-2"> Za <span className=" font-bold text-white">dodatne boje i personalizaciju</span>, kontaktirajte nas putem e-maila. Naša ekipa će vam pružiti informacije o opcijama i mogućnostima, uz dodatnu nadoknadu za personalizaciju.</p>
+          <h3 className="text-center text-white uppercase tracking-wide text-[25px] font-semibold">WALL CLOCKS</h3>
+           <p className="my-2"> Available in elegant <span className=" font-bold text-white">black, pure white, and natural brown colors</span>. These clocks will perfectly fit into any interior and provide you with an elegant addition to your home.</p>
+           <p className="my-2"> Material: <span className="font-bold text-white">Fiberboard</span>. They are made from high-quality material - fiberboard. This material is durable and lightweight, making it ideal for clocks that will be both functional and decorative.</p>
+           <p className="my-2"> Diameter of all clocks:  <span className=" font-bold text-white">40cm</span>. All clocks have a diameter of 40cm, making them large enough to be noticeable but not overly dominant, ideal for any room in the house or office.</p>
+          <p className="my-2"> For <span className=" font-bold text-white">additional colors and personalization</span>, contact us via email. Our team will provide you with information on options and possibilities, with an additional charge for personalization.</p>
           </div>
         </div>
       </div>
