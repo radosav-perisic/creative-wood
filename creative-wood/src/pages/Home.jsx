@@ -27,7 +27,7 @@ const Home = () => {
           smooth={true}
           duration={500}
         >
-          USLUGE
+          SERVICES
         </Link>
       </div>
       <Services />
