@@ -25,10 +25,10 @@ export default function Kolekcije() {
     <Menu   onMouseEnter={() => setIsMenuOpen(true)}
     onMouseLeave={() => setIsMenuOpen(false)} as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex tracking-widest text-[#ffffff] hover:text-blue-500/80 lg:py-0.3 px-0.5 lg:px-1.5  w-full justify-center md:gap-x-1.5 rounded-md bg-transparent text-sm md:text-xl  font-semibold duration-300">
+        <Menu.Button className="inline-flex tracking-widest text-[#ffffff] hover:text-blue-500/80 lg:py-0.3 px-0.5 lg:px-1.5  w-full justify-center md:gap-x-1.5 rounded-md bg-transparent text-xs md:text-lg  font-semibold duration-300">
         CATEGORIES
           <ChevronDownIcon
-            className="-mr-1 md:mt-[0.2rem] h-6 w-6 text-white"
+            className="-mr-1 md:mt-[0.2rem] h-4 w-4 md:h-6 md:w-6 text-white"
             aria-hidden="true"
           />
         </Menu.Button>
@@ -45,7 +45,7 @@ export default function Kolekcije() {
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items className="absolute right-0 z-10 mt-2 w-44 origin-top-right bg-white shadow-lg">
-          <div className="pb-1.5">
+          <div className="pb-1.5 ">
             <Menu.Item>
               {({ active }) => (
                 <NavLink onClick={handleClick}
@@ -56,7 +56,7 @@ export default function Kolekcije() {
                     "block pl-3.5 pr-4 py-1.5 pt-2.5  text-base"
                   )}
                 >
-                 <span className="text-black hover:text-blue-700 duration-200 px-0.5 mr-1  font-bold"> Anime LED Lampe</span>
+                 <span className="text-black hover:text-blue-700 duration-200 px-0.5 mr-1 text-[15px]  font-bold"> Anime LED Lamps</span>
                 </NavLink>
               )}
             </Menu.Item>
@@ -70,7 +70,7 @@ export default function Kolekcije() {
                     active ? "duration-150" : "bg-white  text-gray-900",
                     "block pl-3.5 pr-4 py-1.5  text-base"
                   )}
-                ><span className="text-black px-0.5 mr-1 hover:text-blue-700 duration-200  font-bold">Razne LED Lampe</span>
+                ><span className="text-black px-0.5 mr-1 hover:text-blue-700 duration-200 text-[15px] font-bold">Various LED Lamps</span>
                 </NavLink>
               )}
             </Menu.Item>
@@ -85,7 +85,7 @@ export default function Kolekcije() {
                     "block pl-3.5 pr-4 py-1.5  text-base"
                   )}
                 >
-                 <span className="text-black px-0.5 mr-1 hover:text-blue-700 duration-200 font-bold">Zidni Satovi</span>
+                 <span className="text-black px-0.5 mr-1 hover:text-blue-700 duration-200 text-[15px] font-bold">Wall Clocks</span>
                 </NavLink>
               )}
             </Menu.Item>
