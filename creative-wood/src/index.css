@@ -52,6 +52,20 @@
     color: rgba(253, 4, 4, 0.1);
   }
 }
+.bg-gradient-about {
+  background-image: linear-gradient(
+    to bottom right,
+    #1251a4,  
+    #202020,  
+    #555048,
+    #5d5c5a,
+    #555048,  
+    #072544,
+    #1251a4   
+  );
+}
+
+
 
 .neon {
   color: #05c5f9;
