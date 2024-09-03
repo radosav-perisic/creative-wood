@@ -24,12 +24,12 @@ const handleClick = () => {
       <div className="fixed place-items-center z-10">
         <section className="relative mx-auto">
           {/* Navbar  */}
-          <nav className="flex justify-between backdrop-blur-[15px] ml-5 shadow-md shadow-black/20 text-white w-screen">
+          <nav className="flex justify-between backdrop-blur-[15px] shadow-md shadow-black/20 text-white w-screen">
             <div className="lg:px-5 xl:px-12 py-8 md:py-7 flex w-full items-center">
               {/*  Nav Links  */}
               <ul className="hidden md:flex px-4 mx-auto gap-14 font-semibold font-heading space-x-12">
                 <li>
-                  <NavLink onClick={handleClick} className="text-xl font  tracking-widest hover:text-blue-500/80 duration-200 text-[#ffffff]/90  " as={NavLink} to="/">
+                  <NavLink onClick={handleClick} className="text-lg font  tracking-widest hover:text-blue-500/80 duration-200 text-[#ffffff]/90  " as={NavLink} to="/">
                     HOME
                   </NavLink>
                 </li>
@@ -37,7 +37,7 @@ const handleClick = () => {
                 <Kolekcije />
                 </li>
                 <li>
-                <NavLink className="text-xl font hover:text-blue-500/80  tracking-widest duration-200 text-[#ffffff]/90 " to="about">
+                <NavLink className="text-lg font hover:text-blue-500/80  tracking-widest duration-200 text-[#ffffff]/90 " to="about">
                     ABOUT US
                   </NavLink>
                 </li>
@@ -58,7 +58,7 @@ const handleClick = () => {
             {/*  Responsive navbar  */}
             <ul className="md:hidden gap-7 inline-flex mx-auto items-center font-semibold font-heading ">
                 <li>
-                  <NavLink onClick={handleClick} className="text-sm text-[#ffffff]/90 " as={NavLink} to="/">
+                  <NavLink onClick={handleClick} className="text-xs text-[#ffffff] " as={NavLink} to="/">
                     HOME
                   </NavLink>
                 </li>
@@ -66,7 +66,7 @@ const handleClick = () => {
                 <Kolekcije />
                 </li>
                 <li>
-                <NavLink onClick={handleClick} className="text-sm whitespace-nowrap text-[#ffffff]/90 " as={NavLink} to="/about">
+                <NavLink onClick={handleClick} className="text-xs whitespace-nowrap text-[#ffffff] " as={NavLink} to="/about">
                     ABOUT US
                   </NavLink>
                 </li>
